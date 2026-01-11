@@ -19,6 +19,15 @@ class TestInventory:
         item = inv.get_item("apple")
         assert item["quantity"] == 15
 
+    def test_add_item_updates_price(self):
+        inv = Inventory()
+        inv.add_item("apple", 10, 1.50)
+        inv.add_item("apple", 5, 2.00)
+
+        item = inv.get_item("apple")
+        assert item["quantity"] == 15
+        assert item["price"] == 2.00
+
     def test_add_item_negative_quantity_raises(self):
         inv = Inventory()
         with pytest.raises(ValueError, match="Quantity cannot be negative"):
