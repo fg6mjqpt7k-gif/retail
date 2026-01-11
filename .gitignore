@@ -12,3 +12,4 @@ build/
 .env
 .venv/
 venv/
+scpi_consolidation_v5.xlsx
