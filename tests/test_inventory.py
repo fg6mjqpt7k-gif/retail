@@ -55,6 +55,12 @@ class TestInventory:
         with pytest.raises(ValueError, match="Cannot remove more"):
             inv.remove_item("apple", 15)
 
+    def test_remove_item_negative_quantity_raises(self):
+        inv = Inventory()
+        inv.add_item("apple", 10, 1.50)
+        with pytest.raises(ValueError, match="Quantity cannot be negative"):
+            inv.remove_item("apple", -5)
+
     def test_get_item_not_found_raises(self):
         inv = Inventory()
         with pytest.raises(KeyError, match="not found"):

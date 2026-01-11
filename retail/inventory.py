@@ -14,6 +14,8 @@ class Inventory:
             self._items[name] = {"quantity": quantity, "price": price}
 
     def remove_item(self, name: str, quantity: int) -> None:
+        if quantity < 0:
+            raise ValueError("Quantity cannot be negative")
         if name not in self._items:
             raise KeyError(f"Item '{name}' not found in inventory")
         if quantity > self._items[name]["quantity"]:
