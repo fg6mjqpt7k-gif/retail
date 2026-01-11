@@ -10,6 +10,7 @@ class Inventory:
 
         if name in self._items:
             self._items[name]["quantity"] += quantity
+            self._items[name]["price"] = price
         else:
             self._items[name] = {"quantity": quantity, "price": price}
 
