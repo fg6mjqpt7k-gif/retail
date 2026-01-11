@@ -26,6 +26,7 @@ from decimal import Decimal, InvalidOperation
 import warnings
 
 import pandas as pd
+import fitz  # PyMuPDF for PDF parsing
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side, NamedStyle
 from openpyxl.utils.dataframe import dataframe_to_rows
@@ -413,11 +414,210 @@ class SCPIConsolidatorV5:
         }
     
     # =========================================================================
+    # PDF PARSING
+    # =========================================================================
+
+    def _extract_number(self, text: str, pattern: str, group: int = 1) -> Optional[float]:
+        """Extrait un nombre depuis un texte avec un pattern regex"""
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            try:
+                value = match.group(group)
+                # Nettoyer le nombre: espaces, remplacer virgule par point
+                value = value.replace(' ', '').replace('\u202f', '').replace(',', '.')
+                value = re.sub(r'[^\d.\-]', '', value)
+                return float(value)
+            except (ValueError, AttributeError):
+                return None
+        return None
+
+    def _extract_percentage(self, text: str, pattern: str) -> Optional[float]:
+        """Extrait un pourcentage depuis un texte"""
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            try:
+                value = match.group(1).replace(',', '.').replace(' ', '')
+                return float(value)
+            except (ValueError, AttributeError):
+                return None
+        return None
+
+    def _parse_pdf(self, pdf_path: Path) -> Optional[IndicateursSCPI]:
+        """Parse un PDF de rapport annuel SCPI et extrait les indicateurs"""
+        try:
+            doc = fitz.open(pdf_path)
+            full_text = ""
+
+            # Extraire le texte des 30 premières pages (où sont les indicateurs clés)
+            for i in range(min(30, len(doc))):
+                page = doc[i]
+                full_text += page.get_text() + "\n"
+
+            doc.close()
+
+            # Créer l'objet indicateurs
+            indicateurs = IndicateursSCPI(
+                source_pdf=pdf_path.name,
+                date_extraction=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            )
+
+            # Extraire le nom de la SCPI
+            nom_match = re.search(r'(?:SCPI|scpi)\s+([A-Z][A-Za-zÀ-ÿ\s\-]+?)(?:\n|SCPI|rapport)', full_text)
+            if nom_match:
+                indicateurs.nom_scpi = nom_match.group(1).strip()
+            else:
+                # Essayer d'extraire du nom de fichier
+                indicateurs.nom_scpi = pdf_path.stem.replace('-', ' ').replace('_', ' ')
+
+            # === INDICATEURS DE CAPITAL ===
+            indicateurs.capitalisation = self._extract_number(
+                full_text, r'[Cc]apitalisation[^\d]*?([\d\s,\.]+)\s*(?:M€|millions?|M)', 1
+            )
+            if indicateurs.capitalisation and indicateurs.capitalisation < 10000:
+                indicateurs.capitalisation *= 1_000_000  # Convertir M€ en €
+
+            indicateurs.nombre_associes = self._extract_number(
+                full_text, r'[Nn]ombre\s+d[\'\']associ[ée]s[^\d]*([\d\s]+)', 1
+            )
+
+            indicateurs.nombre_parts = self._extract_number(
+                full_text, r'[Nn]ombre\s+de\s+parts?\s+(?:souscrites?)?[^\d]*([\d\s]+)', 1
+            )
+
+            # === VALEURS ===
+            indicateurs.valeur_realisation = self._extract_number(
+                full_text, r'[Vv]aleur\s+de\s+r[ée]alisation[^\d]*([\d\s,\.]+)\s*€', 1
+            )
+
+            indicateurs.valeur_reconstitution = self._extract_number(
+                full_text, r'[Vv]aleur\s+de\s+reconstitution[^\d]*([\d\s,\.]+)\s*€', 1
+            )
+
+            indicateurs.prix_souscription = self._extract_number(
+                full_text, r'[Pp]rix\s+(?:de\s+)?souscription[^\d]*([\d\s,\.]+)\s*€', 1
+            )
+
+            # === PERFORMANCE ===
+            indicateurs.taux_distribution = self._extract_percentage(
+                full_text, r'[Tt]aux\s+de\s+distribution[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.dividende_brut = self._extract_number(
+                full_text, r'[Dd]ividende\s+brut[^\d]*([\d,\.]+)\s*€', 1
+            )
+
+            indicateurs.resultat_courant = self._extract_number(
+                full_text, r'[Rr][ée]sultat\s+(?:courant\s+)?par\s+part[^\d]*([\d,\.]+)\s*€', 1
+            )
+
+            indicateurs.tri_10ans = self._extract_percentage(
+                full_text, r'TRI\s+(?:10\s*ans?|2014[^\d]+2024)[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === OCCUPATION ===
+            indicateurs.tof_annuel = self._extract_percentage(
+                full_text, r'[Tt]aux\s+d[\'\']occupation\s+financier[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === PATRIMOINE ===
+            indicateurs.nombre_immeubles = self._extract_number(
+                full_text, r'[Nn]ombre\s+d[\'\']immeubles?[^\d]*([\d]+)', 1
+            )
+
+            indicateurs.surface_totale = self._extract_number(
+                full_text, r'[Ss]urface[^\d]*([\d\s]+)\s*m[²2]', 1
+            )
+
+            indicateurs.nombre_locataires = self._extract_number(
+                full_text, r'[Nn]ombre\s+de\s+locataires?[^\d]*([\d\s]+)', 1
+            )
+
+            # === RÉPARTITION GÉOGRAPHIQUE ===
+            indicateurs.pct_paris = self._extract_percentage(
+                full_text, r'Paris[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_idf_hors_paris = self._extract_percentage(
+                full_text, r'[ÎI]le-de-France[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_regions = self._extract_percentage(
+                full_text, r'[Rr][ée]gions?[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_etranger = self._extract_percentage(
+                full_text, r'[ÉE]tranger[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === RÉPARTITION SECTORIELLE ===
+            indicateurs.pct_bureaux = self._extract_percentage(
+                full_text, r'[Bb]ureaux[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_commerces = self._extract_percentage(
+                full_text, r'[Cc]ommerces?[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_logistique = self._extract_percentage(
+                full_text, r'[Ll]ogistique[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_hotellerie = self._extract_percentage(
+                full_text, r'[Hh][ôo]tel(?:s|lerie)?[^\d]*([\d,\.]+)\s*%'
+            )
+
+            indicateurs.pct_residentiel = self._extract_percentage(
+                full_text, r'[Rr][ée]sidentiel|[Rr][ée]sidence[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === ENDETTEMENT ===
+            indicateurs.ratio_endettement_ltv = self._extract_percentage(
+                full_text, r'(?:LTV|[Rr]atio\s+d[\'\']endettement)[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # Compter le nombre d'indicateurs extraits
+            indicateurs.nb_indicateurs_extraits = sum(
+                1 for f in [
+                    indicateurs.capitalisation, indicateurs.nombre_associes,
+                    indicateurs.valeur_realisation, indicateurs.taux_distribution,
+                    indicateurs.tof_annuel, indicateurs.pct_paris
+                ] if f is not None
+            )
+
+            indicateurs.qualite_extraction = (
+                "Bonne" if indicateurs.nb_indicateurs_extraits >= 5 else
+                "Moyenne" if indicateurs.nb_indicateurs_extraits >= 3 else "Faible"
+            )
+
+            return indicateurs
+
+        except Exception as e:
+            print(f"   ❌ Erreur parsing {pdf_path.name}: {e}")
+            return None
+
+    def _load_pdfs(self):
+        """Charge et parse tous les PDFs du dossier input"""
+        print(f"📄 Extraction des données depuis {len(self.pdf_files)} PDF(s)...")
+
+        for pdf_path in self.pdf_files:
+            print(f"   📖 Parsing: {pdf_path.name}")
+            indicateurs = self._parse_pdf(pdf_path)
+            if indicateurs:
+                self.results['indicateurs'].append(indicateurs)
+                print(f"      ✓ {indicateurs.nb_indicateurs_extraits} indicateurs extraits ({indicateurs.qualite_extraction})")
+            else:
+                self.results['erreurs'].append(f"Échec parsing: {pdf_path.name}")
+
+    # =========================================================================
     # CONSOLIDATION
     # =========================================================================
-    
+
     def consolidate(self):
         """Effectue toutes les consolidations"""
+        # Charger les PDFs d'abord
+        if self.pdf_files:
+            self._load_pdfs()
+
         print("🔧 Consolidation des CAPEX détaillés...")
         self._build_capex_detail()
         
