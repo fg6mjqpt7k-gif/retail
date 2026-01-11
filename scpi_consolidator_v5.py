@@ -332,10 +332,18 @@ class TestCoherence:
 
 class SCPIConsolidatorV5:
     """Consolidateur SCPI V5 avec CAPEX détaillé par actif"""
-    
-    def __init__(self, output_dir: str = "."):
+
+    def __init__(self, output_dir: str = ".", input_dir: str = None):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Dossier d'entrée pour les PDFs
+        self.input_dir = Path(input_dir) if input_dir else Path("input")
+        if not self.input_dir.exists():
+            self.input_dir.mkdir(parents=True, exist_ok=True)
+            print(f"📁 Dossier d'entrée créé: {self.input_dir}")
+
+        self.pdf_files = list(self.input_dir.glob("*.pdf")) + list(self.input_dir.glob("*.PDF"))
         
         self.results = {
             'indicateurs': [],
@@ -1503,12 +1511,21 @@ class SCPIConsolidatorV5:
 
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description="SCPI Consolidator V5")
+    parser.add_argument("-i", "--input", help="Dossier d'entrée contenant les PDFs", default="input")
     parser.add_argument("-o", "--output", help="Dossier de sortie", default=".")
     args = parser.parse_args()
-    
-    consolidator = SCPIConsolidatorV5(args.output)
+
+    consolidator = SCPIConsolidatorV5(output_dir=args.output, input_dir=args.input)
+
+    if consolidator.pdf_files:
+        print(f"📄 {len(consolidator.pdf_files)} fichier(s) PDF trouvé(s) dans {consolidator.input_dir}:")
+        for pdf in consolidator.pdf_files:
+            print(f"   - {pdf.name}")
+    else:
+        print(f"⚠️  Aucun fichier PDF trouvé dans {consolidator.input_dir}")
+
     consolidator.consolidate()
     
     excel_path = consolidator.export_excel()
