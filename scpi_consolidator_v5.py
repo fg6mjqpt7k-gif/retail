@@ -332,10 +332,18 @@ class TestCoherence:
 
 class SCPIConsolidatorV5:
     """Consolidateur SCPI V5 avec CAPEX détaillé par actif"""
-    
-    def __init__(self, output_dir: str = "."):
+
+    def __init__(self, output_dir: str = ".", input_dir: str = None):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Dossier d'entrée pour les PDFs
+        self.input_dir = Path(input_dir) if input_dir else Path("input")
+        if not self.input_dir.exists():
+            self.input_dir.mkdir(parents=True, exist_ok=True)
+            print(f"📁 Dossier d'entrée créé: {self.input_dir}")
+
+        self.pdf_files = list(self.input_dir.glob("*.pdf")) + list(self.input_dir.glob("*.PDF"))
         
         self.results = {
             'indicateurs': [],
@@ -566,6 +574,72 @@ class SCPIConsolidatorV5:
     # TESTS DE COHÉRENCE
     # =========================================================================
     
+    def _validate_percentage_sum(
+        self,
+        values: List[Optional[float]],
+        scpi: str,
+        test_id: str,
+        description: str,
+        tolerance_key: str,
+        min_valid_count: int = 2
+    ) -> None:
+        """
+        Validates that a list of percentage values sums to 100%.
+
+        Args:
+            values: List of percentage values (None values are filtered out)
+            scpi: SCPI source identifier
+            test_id: Test identifier (e.g., "REP-001")
+            description: Human-readable test description
+            tolerance_key: Key in self.seuils for the tolerance threshold
+            min_valid_count: Minimum number of non-None values required
+        """
+        valid_values = [v for v in values if v is not None]
+        if len(valid_values) >= min_valid_count:
+            total = sum(valid_values)
+            ecart = abs(100 - total)
+            tolerance = self.seuils[tolerance_key]
+            statut = "OK" if ecart < tolerance else "ALERTE"
+
+            self.results['controles'].append(TestCoherence(
+                scpi_source=scpi,
+                categorie="REPARTITION",
+                test_id=test_id,
+                description=description,
+                valeur_testee=f"{total:.1f}%",
+                valeur_reference="100%",
+                ecart_pct=ecart,
+                statut=statut,
+                severite="Info" if statut == "OK" else "Warning"
+            ))
+
+    def _evaluate_threshold(
+        self,
+        value: float,
+        thresholds: List[Tuple[float, str, str, str]]
+    ) -> Tuple[str, str, str]:
+        """
+        Evaluates a value against ordered thresholds.
+
+        Args:
+            value: The value to evaluate
+            thresholds: List of (threshold, comparison, status, severity, comment) tuples
+                       Evaluated in order, first match wins
+
+        Returns:
+            Tuple of (status, severity, comment)
+        """
+        for threshold, comparison, status, severity, comment in thresholds:
+            if comparison == '<' and value < threshold:
+                return status, severity, comment
+            elif comparison == '<=' and value <= threshold:
+                return status, severity, comment
+            elif comparison == '>=' and value >= threshold:
+                return status, severity, comment
+            elif comparison == '>' and value > threshold:
+                return status, severity, comment
+        return "OK", "Info", ""
+
     def _run_all_tests(self):
         """Exécute tous les tests de cohérence"""
         for ind in self.results['indicateurs']:
@@ -646,82 +720,83 @@ class SCPIConsolidatorV5:
             ))
     
     def _test_occupation(self, ind: IndicateursSCPI, scpi: str):
-        """Tests sur l'occupation"""
-        if ind.tof_annuel is not None:
-            if ind.tof_annuel < 80:
-                statut, severite = "ALERTE", "Warning"
-                commentaire = "TOF inférieur à 80% - vigilance"
-            elif ind.tof_annuel < self.seuils['tof_min']:
-                statut, severite = "ERREUR", "Error"
-                commentaire = "TOF anormalement bas"
-            else:
-                statut, severite = "OK", "Info"
-                commentaire = ""
-            
-            self.results['controles'].append(TestCoherence(
-                scpi_source=scpi, categorie="OCCUPATION", test_id="OCC-001",
-                description="TOF dans plage acceptable",
-                valeur_testee=f"{ind.tof_annuel:.2f}%",
-                valeur_reference=f"≥ 80%",
-                statut=statut, severite=severite, commentaire=commentaire
-            ))
-    
+        """Tests sur l'occupation (taux d'occupation financier)"""
+        if ind.tof_annuel is None:
+            return
+
+        # Threshold rules: (threshold, comparison, status, severity, comment)
+        # Note: Order matters - first matching rule wins
+        occupation_thresholds = [
+            (80, '<', "ALERTE", "Warning", "TOF inférieur à 80% - vigilance"),
+            (self.seuils['tof_min'], '<', "ERREUR", "Error", "TOF anormalement bas"),
+        ]
+        statut, severite, commentaire = self._evaluate_threshold(
+            ind.tof_annuel, occupation_thresholds
+        )
+
+        self.results['controles'].append(TestCoherence(
+            scpi_source=scpi,
+            categorie="OCCUPATION",
+            test_id="OCC-001",
+            description="TOF dans plage acceptable",
+            valeur_testee=f"{ind.tof_annuel:.2f}%",
+            valeur_reference="≥ 80%",
+            statut=statut,
+            severite=severite,
+            commentaire=commentaire
+        ))
+
     def _test_endettement(self, ind: IndicateursSCPI, scpi: str):
-        """Tests sur l'endettement"""
-        if ind.ratio_endettement_ltv is not None:
-            if ind.ratio_endettement_ltv >= self.seuils['ltv_max']:
-                statut, severite = "ALERTE", "Warning"
-                commentaire = "LTV à la limite réglementaire"
-            elif ind.ratio_endettement_ltv >= 40:
-                statut, severite = "OK", "Info"
-                commentaire = "LTV élevé - surveiller"
-            else:
-                statut, severite = "OK", "Info"
-                commentaire = ""
-            
-            self.results['controles'].append(TestCoherence(
-                scpi_source=scpi, categorie="ENDETTEMENT", test_id="END-001",
-                description="LTV vs seuil réglementaire (50%)",
-                valeur_testee=f"{ind.ratio_endettement_ltv:.2f}%",
-                valeur_reference=f"< {self.seuils['ltv_max']}%",
-                statut=statut, severite=severite, commentaire=commentaire
-            ))
+        """Tests sur l'endettement (ratio LTV)"""
+        if ind.ratio_endettement_ltv is None:
+            return
+
+        # Threshold rules: (threshold, comparison, status, severity, comment)
+        ltv_thresholds = [
+            (self.seuils['ltv_max'], '>=', "ALERTE", "Warning", "LTV à la limite réglementaire"),
+            (40, '>=', "OK", "Info", "LTV élevé - surveiller"),
+        ]
+        statut, severite, commentaire = self._evaluate_threshold(
+            ind.ratio_endettement_ltv, ltv_thresholds
+        )
+
+        self.results['controles'].append(TestCoherence(
+            scpi_source=scpi,
+            categorie="ENDETTEMENT",
+            test_id="END-001",
+            description="LTV vs seuil réglementaire (50%)",
+            valeur_testee=f"{ind.ratio_endettement_ltv:.2f}%",
+            valeur_reference=f"< {self.seuils['ltv_max']}%",
+            statut=statut,
+            severite=severite,
+            commentaire=commentaire
+        ))
     
     def _test_repartition(self, ind: IndicateursSCPI, scpi: str):
-        """Tests sur les répartitions"""
-        # Géographique
-        geo = [ind.pct_paris, ind.pct_idf_hors_paris, ind.pct_regions, ind.pct_etranger]
-        geo_valides = [g for g in geo if g is not None]
-        if len(geo_valides) >= 2:
-            total = sum(geo_valides)
-            ecart = abs(100 - total)
-            statut = "OK" if ecart < self.seuils['somme_geo_tolerance'] else "ALERTE"
-            
-            self.results['controles'].append(TestCoherence(
-                scpi_source=scpi, categorie="REPARTITION", test_id="REP-001",
-                description="Somme répartition géographique = 100%",
-                valeur_testee=f"{total:.1f}%", valeur_reference="100%",
-                ecart_pct=ecart, statut=statut,
-                severite="Info" if statut == "OK" else "Warning"
-            ))
-        
-        # Typologique
-        typo = [ind.pct_bureaux, ind.pct_commerces, ind.pct_logistique, 
-                ind.pct_activites, ind.pct_sante, ind.pct_residentiel,
-                ind.pct_hotellerie, ind.pct_enseignement, ind.pct_autres]
-        typo_valides = [t for t in typo if t is not None]
-        if len(typo_valides) >= 2:
-            total = sum(typo_valides)
-            ecart = abs(100 - total)
-            statut = "OK" if ecart < self.seuils['somme_typo_tolerance'] else "ALERTE"
-            
-            self.results['controles'].append(TestCoherence(
-                scpi_source=scpi, categorie="REPARTITION", test_id="REP-002",
-                description="Somme répartition typologique = 100%",
-                valeur_testee=f"{total:.1f}%", valeur_reference="100%",
-                ecart_pct=ecart, statut=statut,
-                severite="Info" if statut == "OK" else "Warning"
-            ))
+        """Tests sur les répartitions géographique et typologique"""
+        # Validate geographic distribution sums to 100%
+        geo_values = [ind.pct_paris, ind.pct_idf_hors_paris, ind.pct_regions, ind.pct_etranger]
+        self._validate_percentage_sum(
+            values=geo_values,
+            scpi=scpi,
+            test_id="REP-001",
+            description="Somme répartition géographique = 100%",
+            tolerance_key='somme_geo_tolerance'
+        )
+
+        # Validate typological distribution sums to 100%
+        typo_values = [
+            ind.pct_bureaux, ind.pct_commerces, ind.pct_logistique,
+            ind.pct_activites, ind.pct_sante, ind.pct_residentiel,
+            ind.pct_hotellerie, ind.pct_enseignement, ind.pct_autres
+        ]
+        self._validate_percentage_sum(
+            values=typo_values,
+            scpi=scpi,
+            test_id="REP-002",
+            description="Somme répartition typologique = 100%",
+            tolerance_key='somme_typo_tolerance'
+        )
     
     def _test_patrimoine(self, ind: IndicateursSCPI, scpi: str):
         """Tests sur le patrimoine"""
@@ -1436,12 +1511,21 @@ class SCPIConsolidatorV5:
 
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description="SCPI Consolidator V5")
+    parser.add_argument("-i", "--input", help="Dossier d'entrée contenant les PDFs", default="input")
     parser.add_argument("-o", "--output", help="Dossier de sortie", default=".")
     args = parser.parse_args()
-    
-    consolidator = SCPIConsolidatorV5(args.output)
+
+    consolidator = SCPIConsolidatorV5(output_dir=args.output, input_dir=args.input)
+
+    if consolidator.pdf_files:
+        print(f"📄 {len(consolidator.pdf_files)} fichier(s) PDF trouvé(s) dans {consolidator.input_dir}:")
+        for pdf in consolidator.pdf_files:
+            print(f"   - {pdf.name}")
+    else:
+        print(f"⚠️  Aucun fichier PDF trouvé dans {consolidator.input_dir}")
+
     consolidator.consolidate()
     
     excel_path = consolidator.export_excel()
