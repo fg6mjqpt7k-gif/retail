@@ -606,6 +606,9 @@ class SCPIConsolidatorV5:
             # Extraire les SCIs
             self._extract_scis(full_text, indicateurs.nom_scpi)
 
+            # Extraire les actifs immobiliers
+            self._extract_actifs(full_text, indicateurs.nom_scpi)
+
             # Compter les indicateurs extraits (tous les champs non None)
             count = 0
             for field_name in indicateurs.__dataclass_fields__:
@@ -659,6 +662,95 @@ class SCPIConsolidatorV5:
             sci.nombre_immeubles = self._extract_number(sci_section, r'(\d+)\s+immeubles?', 1)
 
             self.results['sci'].append(sci)
+
+    def _extract_actifs(self, text: str, scpi_source: str):
+        """Extrait les actifs immobiliers détenus en direct depuis le texte du PDF"""
+        # Pattern générique pour capturer: adresse + code postal + ville
+        # Formats courants:
+        # - "45 rue des Vinaigriers 75010 PARIS"
+        # - "12 rue d'Oradour sur Glane (40 % de l'indivision) 75015 PARIS"
+        actif_pattern = r'(\d+[^€\d\n]{3,80})\s+(\d{5})\s+([A-ZÀÂÉÈÊËÏÎÔÙÛÜ][A-ZÀÂÉÈÊËÏÎÔÙÛÜ\s\-]{2,30})'
+
+        matches = list(re.finditer(actif_pattern, text))
+        seen_addresses = set()
+
+        for match in matches:
+            adresse_raw = match.group(1).strip()
+            code_postal = match.group(2)
+            ville = match.group(3).strip()
+
+            # Nettoyer l'adresse (enlever les % d'indivision à la fin)
+            adresse = re.sub(r'\s*\([^)]*%[^)]*\)\s*$', '', adresse_raw).strip()
+
+            # Vérifier que c'est une vraie adresse (contient rue, avenue, boulevard, etc.)
+            if not re.search(r'(rue|avenue|boulevard|quai|place|allée|impasse|chemin|passage|cours|voie)', adresse, re.IGNORECASE):
+                continue
+
+            # Ignorer les lignes trop courtes ou qui ne ressemblent pas à des adresses
+            if len(adresse) < 10 or len(ville) < 2:
+                continue
+
+            # Éviter les doublons
+            key = f"{adresse.lower()}_{code_postal}"
+            if key in seen_addresses:
+                continue
+            seen_addresses.add(key)
+
+            # Extraire le contexte autour de l'actif pour les autres données
+            start = max(0, match.start() - 20)
+            end = min(len(text), match.end() + 400)
+            context = text[start:end]
+
+            # Créer l'actif
+            actif = ActifImmobilier(
+                scpi_source=scpi_source,
+                adresse=adresse,
+                code_postal=code_postal,
+                ville=ville.strip()
+            )
+
+            # Extraire la quote-part si présente
+            quote_match = re.search(r'(\d+)\s*%\s*(?:de\s+l[\'\']indivision)?', adresse_raw)
+            if quote_match:
+                actif.quote_part_pct = float(quote_match.group(1))
+
+            # Extraire la surface (chercher "X XXX m²" après l'adresse)
+            surface_match = re.search(r'(\d[\d\s]{0,8})\s*(?:m²|m2)', context)
+            if surface_match:
+                try:
+                    val = surface_match.group(1).replace(' ', '').replace('\u202f', '')
+                    actif.surface_m2 = float(val)
+                except:
+                    pass
+
+            # Extraire la valeur vénale (grands nombres en euros)
+            valeur_match = re.search(r'(\d{1,3}(?:[\s\u202f]\d{3})+(?:,\d+)?)\s*€', context)
+            if valeur_match:
+                try:
+                    val = valeur_match.group(1).replace(' ', '').replace('\u202f', '').replace(',', '.')
+                    actif.valeur_venale = float(val)
+                except:
+                    pass
+
+            # Extraire le type d'actif
+            type_match = re.search(r'\b(Bureaux|Commerces?|Logistique|Activit[ée]s?|H[ôo]tels?|R[ée]sidentiel|Sant[ée]|Entrep[ôo]ts?|Habitation)\b', context, re.IGNORECASE)
+            if type_match:
+                actif.type_actif = type_match.group(1).capitalize()
+
+            # Extraire la date d'acquisition
+            date_match = re.search(r'(\d{2}/\d{2}/\d{4})', context)
+            if date_match:
+                actif.date_acquisition = date_match.group(1)
+
+            # Extraire l'année de construction
+            annee_match = re.search(r'\b(19\d{2}|20[0-2]\d)\b', context)
+            if annee_match:
+                # S'assurer que ce n'est pas une année de date
+                year = int(annee_match.group(1))
+                if year < 2025:  # Année de construction plausible
+                    pass  # On pourrait l'ajouter si le champ existait
+
+            self.results['actifs'].append(actif)
 
     def _load_pdfs(self):
         """Charge et parse tous les PDFs du dossier input"""
