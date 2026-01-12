@@ -463,20 +463,32 @@ class SCPIConsolidatorV5:
             )
 
             # === IDENTIFICATION SCPI ===
-            # Chercher le nom de la SCPI
-            nom_patterns = [
-                r'SCPI\s+([A-Z][A-Za-zÀ-ÿ\s\-\']+?)(?:\s*\n|\s+SCPI|\s+Rapport)',
-                r'([A-Z][A-Z\s\-]+(?:PATRIMOINE|PIERRE|PLACEMENT|IMMOBILIER|DIVERSIFICATION))',
-            ]
-            for pattern in nom_patterns:
-                match = re.search(pattern, full_text[:5000])
-                if match:
-                    nom = match.group(1).strip()
-                    if len(nom) > 3 and len(nom) < 60:
-                        indicateurs.nom_scpi = nom
-                        break
-            if not indicateurs.nom_scpi:
-                indicateurs.nom_scpi = pdf_path.stem.replace('-', ' ').replace('_', ' ')[:50]
+            # Priorité 1: Extraire le nom du fichier PDF (plus fiable)
+            pdf_name = pdf_path.stem
+            # Nettoyer le nom du fichier
+            clean_name = pdf_name.replace('_RA_2024', '').replace('-RA-2024', '')
+            clean_name = clean_name.replace('_', ' ').replace('-', ' ')
+            clean_name = re.sub(r'\s+', ' ', clean_name).strip()
+            clean_name = re.sub(r'France SCPI\s+', '', clean_name)
+            clean_name = re.sub(r'rapport annuel.*', '', clean_name, flags=re.IGNORECASE).strip()
+            clean_name = re.sub(r'\d{4}.*$', '', clean_name).strip()
+            clean_name = re.sub(r'^9328\s*', '', clean_name).strip()
+
+            # Priorité 2: Chercher dans le texte si le nom du fichier est trop court
+            if len(clean_name) < 5:
+                nom_patterns = [
+                    r'SCPI\s+([A-Z][A-Za-zÀ-ÿ\s\-\']+?)(?:\s*\n|\s+SCPI|\s+Rapport)',
+                    r'([A-Z][A-Z\s\-]+(?:PATRIMOINE|PIERRE|PLACEMENT|IMMOBILIER|DIVERSIFICATION))',
+                ]
+                for pattern in nom_patterns:
+                    match = re.search(pattern, full_text[:5000])
+                    if match:
+                        nom = match.group(1).strip()
+                        if len(nom) > 3 and len(nom) < 60:
+                            clean_name = nom
+                            break
+
+            indicateurs.nom_scpi = clean_name[:60] if clean_name else pdf_path.stem[:50]
 
             # === CAPITAL ET PARTS ===
             indicateurs.capitalisation = self._extract_number(
@@ -515,9 +527,17 @@ class SCPIConsolidatorV5:
             )
 
             # === PERFORMANCE ===
-            indicateurs.taux_distribution = self._extract_percentage(
-                full_text, r'[Tt]aux\s+de\s+distribution[^\d]*([\d,\.]+)\s*%'
-            )
+            # Chercher le TD avec plusieurs patterns (du plus spécifique au plus général)
+            td_patterns = [
+                r'[Tt]aux\s+de\s+distribution\s+(?:2024|brut)?\s*[:\s]*([\d,\.]+)\s*%',
+                r'TD\s*(?:2024)?\s*[:\s]*([\d,\.]+)\s*%',
+                r'[Tt]aux\s+de\s+distribution[^\d]*([\d,\.]+)\s*%',
+            ]
+            for pattern in td_patterns:
+                td = self._extract_percentage(full_text, pattern)
+                if td and 2.0 <= td <= 15.0:  # TD raisonnable entre 2% et 15%
+                    indicateurs.taux_distribution = td
+                    break
             indicateurs.dividende_brut = self._extract_number(
                 full_text, r'[Dd]ividende\s+brut[^\d]*([\d,\.]+)\s*€', 1
             )
