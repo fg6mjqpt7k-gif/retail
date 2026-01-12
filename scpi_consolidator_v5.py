@@ -622,6 +622,301 @@ class SCPIConsolidatorV5:
             indicateurs.commission_souscription_pct = self._extract_percentage(
                 full_text, r'[Cc]ommission\s+(?:de\s+)?souscription[^\d]*([\d,\.]+)\s*%'
             )
+            indicateurs.commission_gestion_pct = self._extract_percentage(
+                full_text, r'[Cc]ommission\s+de\s+gestion[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === IDENTIFICATION COMPLÉMENTAIRE ===
+            # Société de gestion
+            sg_patterns = [
+                r'[Ss]oci[ée]t[ée]\s+de\s+gestion\s*[:\s]+([A-Za-zÀ-ÿ\s\-]+?)(?:\n|,|\.)',
+                r'[Gg][ée]r[ée]e?\s+par\s+([A-Za-zÀ-ÿ\s\-]+?)(?:\n|,|\.)',
+            ]
+            for pattern in sg_patterns:
+                match = re.search(pattern, full_text[:10000])
+                if match:
+                    indicateurs.societe_gestion = match.group(1).strip()[:50]
+                    break
+
+            # Visa AMF
+            visa_match = re.search(r'[Vv]isa\s+AMF[^\d]*(\d{2}-\d+)', full_text)
+            if visa_match:
+                indicateurs.visa_amf = visa_match.group(1)
+
+            # Date de création
+            date_match = re.search(r'[Cc]r[ée][ée]e?\s+(?:en\s+)?(\d{4})', full_text[:5000])
+            if date_match:
+                indicateurs.date_creation = date_match.group(1)
+
+            # Type SCPI
+            if re.search(r'bureaux', full_text[:10000], re.IGNORECASE):
+                indicateurs.type_scpi = "Bureaux"
+            elif re.search(r'commerces?', full_text[:10000], re.IGNORECASE):
+                indicateurs.type_scpi = "Commerces"
+            elif re.search(r'diversifi[ée]', full_text[:10000], re.IGNORECASE):
+                indicateurs.type_scpi = "Diversifiée"
+            elif re.search(r'logistique|activit[ée]s', full_text[:10000], re.IGNORECASE):
+                indicateurs.type_scpi = "Logistique/Activités"
+
+            # === TRI DÉTAILLÉS ===
+            indicateurs.tri_5_ans = self._extract_percentage(
+                full_text, r'TRI\s*5\s*ans?[^\d]*([\-\d,\.]+)\s*%'
+            )
+            indicateurs.tri_10_ans = self._extract_percentage(
+                full_text, r'TRI\s*10\s*ans?[^\d]*([\-\d,\.]+)\s*%'
+            )
+            indicateurs.tri_15_ans = self._extract_percentage(
+                full_text, r'TRI\s*15\s*ans?[^\d]*([\-\d,\.]+)\s*%'
+            )
+            indicateurs.tri_20_ans = self._extract_percentage(
+                full_text, r'TRI\s*20\s*ans?[^\d]*([\-\d,\.]+)\s*%'
+            )
+
+            # === COLLECTE ===
+            indicateurs.collecte_brute = self._extract_number(
+                full_text, r'[Cc]ollecte\s+brute[^\d]*([\d\s,\.]+)\s*(?:€|M€|K€)', 1
+            )
+            indicateurs.collecte_nette = self._extract_number(
+                full_text, r'[Cc]ollecte\s+nette[^\d]*([\d\s,\.]+)\s*(?:€|M€|K€)', 1
+            )
+
+            # === ACQUISITIONS / CESSIONS ===
+            indicateurs.nb_acquisitions = self._extract_number(
+                full_text, r'(\d+)\s+acquisitions?', 1
+            )
+            indicateurs.montant_acquisitions = self._extract_number(
+                full_text, r'[Aa]cquisitions?[^\d]*([\d\s,\.]+)\s*(?:M€|M\s*€)', 1
+            )
+            indicateurs.nb_cessions = self._extract_number(
+                full_text, r'(\d+)\s+cessions?', 1
+            )
+            indicateurs.montant_cessions = self._extract_number(
+                full_text, r'[Cc]essions?[^\d]*([\d\s,\.]+)\s*(?:M€|M\s*€)', 1
+            )
+            indicateurs.plus_value_cessions = self._extract_number(
+                full_text, r'[Pp]lus-values?\s+(?:de\s+cession)?[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
+            )
+
+            # === RÉSULTATS COMPTABLES ===
+            indicateurs.resultat_net = self._extract_number(
+                full_text, r'[Rr][ée]sultat\s+net[^\d]*([\d\s,\.]+)\s*(?:€|M€|K€)', 1
+            )
+            indicateurs.resultat_par_part = self._extract_number(
+                full_text, r'[Rr][ée]sultat\s+(?:net\s+)?par\s+part[^\d]*([\d,\.]+)\s*€', 1
+            )
+            indicateurs.produits_financiers = self._extract_number(
+                full_text, r'[Pp]roduits\s+financiers[^\d]*([\d\s,\.]+)\s*(?:€|K€)', 1
+            )
+            indicateurs.revenus_fonciers_par_part = self._extract_number(
+                full_text, r'[Rr]evenus?\s+fonciers?\s+(?:par\s+part)?[^\d]*([\d,\.]+)\s*€', 1
+            )
+
+            # === VACANCE ===
+            indicateurs.surface_vacante = self._extract_number(
+                full_text, r'[Ss]urface\s+vacante[^\d]*([\d\s,\.]+)\s*m[²2]', 1
+            )
+            surface_vac_pct = self._extract_percentage(
+                full_text, r'[Vv]acance[^\d]*([\d,\.]+)\s*%'
+            )
+            if surface_vac_pct:
+                indicateurs.surface_vacante_pct = surface_vac_pct
+
+            # === VALEURS CALCULÉES ===
+            # Valeur par part
+            if indicateurs.valeur_realisation and indicateurs.nombre_parts:
+                if indicateurs.nombre_parts > 0:
+                    indicateurs.valeur_realisation_par_part = indicateurs.valeur_realisation / indicateurs.nombre_parts
+            if indicateurs.valeur_reconstitution and indicateurs.nombre_parts:
+                if indicateurs.nombre_parts > 0:
+                    indicateurs.valeur_reconstitution_par_part = indicateurs.valeur_reconstitution / indicateurs.nombre_parts
+
+            # Écart prix/reconstitution
+            if indicateurs.prix_souscription and indicateurs.valeur_reconstitution_par_part:
+                if indicateurs.valeur_reconstitution_par_part > 0:
+                    indicateurs.ecart_prix_reconstitution = (
+                        (indicateurs.prix_souscription - indicateurs.valeur_reconstitution_par_part)
+                        / indicateurs.valeur_reconstitution_par_part * 100
+                    )
+
+            # Nombre d'actifs
+            nb_actifs = self._extract_number(full_text, r'(\d+)\s+(?:actifs?|immeubles?|biens?)', 1)
+            if nb_actifs and nb_actifs > 0 and nb_actifs < 1000:
+                indicateurs.nombre_actifs = int(nb_actifs)
+
+            # === ENDETTEMENT DÉTAILLÉ ===
+            indicateurs.emprunts_bancaires = self._extract_number(
+                full_text, r'[Ee]mprunts?\s+bancaires?[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
+            )
+            indicateurs.tresorerie = self._extract_number(
+                full_text, r'[Tt]r[ée]sorerie[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
+            )
+
+            # === LABEL ISR ===
+            if re.search(r'label\s+ISR|ISR\s+immobilier', full_text, re.IGNORECASE):
+                indicateurs.pct_autres = 1.0  # Flag ISR in pct_autres field
+
+            # === DATE DE CRÉATION (patterns supplémentaires) ===
+            if not indicateurs.date_creation:
+                date_patterns = [
+                    r'[Dd]ate\s+de\s+cr[ée]ation\s*:\s*(\d{1,2}\s+\w+\s+\d{4})',
+                    r'[Dd]ate\s+de\s+cr[ée]ation\s*:\s*(\d{4})',
+                    r'[Cc]r[ée][ée]e?\s+(?:en\s+|le\s+)?(\d{1,2}\s+\w+\s+\d{4})',
+                    r'[Cc]r[ée][ée]e?\s+(?:en\s+)?(\d{4})',
+                ]
+                for pattern in date_patterns:
+                    match = re.search(pattern, full_text)  # Search entire text
+                    if match:
+                        indicateurs.date_creation = match.group(1)
+                        break
+
+            # === VALEUR NOMINALE ===
+            vn_patterns = [
+                r'[Nn]ominal\s+(?:de\s+la\s+)?part\s*:\s*([\d\s,\.]+)\s*€',
+                r'[Vv]aleur\s+nominale\s*:\s*([\d\s,\.]+)\s*€',
+                r'[Vv]aleur\s+nominale[^\d]{0,20}([\d,\.]+)\s*€',
+            ]
+            for pattern in vn_patterns:
+                vn = self._extract_number(full_text, pattern, 1)
+                if vn and vn > 0 and vn < 1000:
+                    indicateurs.valeur_nominale = vn
+                    break
+
+            cn_patterns = [
+                r'[Cc]apital\s+initial\s*:\s*([\d\s,\.]+)\s*€',
+                r'[Cc]apital\s+(?:nominal|social)[^\d]*([\d\s,\.]+)\s*€',
+            ]
+            for pattern in cn_patterns:
+                cn = self._extract_number(full_text, pattern, 1)
+                if cn and cn > 0:
+                    indicateurs.capital_nominal = cn
+                    break
+
+            # === PRODUITS ET CHARGES ===
+            indicateurs.produits_locatifs = self._extract_number(
+                full_text, r'[Pp]roduits\s+locatifs[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+            indicateurs.charges_immobilieres = self._extract_number(
+                full_text, r'[Cc]harges\s+immobili[èe]res[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+
+            # === PARTS EN ATTENTE ===
+            parts_attente = self._extract_percentage(
+                full_text, r'parts?\s+en\s+attente[^\d]*([\d,\.]+)\s*%'
+            )
+            if parts_attente:
+                indicateurs.parts_en_attente_retrait = int(parts_attente * 100)  # Store as count
+
+            # === DÉLAI DE JOUISSANCE ===
+            delai_match = re.search(r'd[ée]lai\s+de\s+jouissance[^\d]*(\d+)\s*(?:mois|jours)', full_text, re.IGNORECASE)
+            if delai_match:
+                indicateurs.delai_jouissance = delai_match.group(1) + " mois"
+
+            # === TRAVAUX DÉTAILLÉS ===
+            indicateurs.travaux_renovation = self._extract_number(
+                full_text, r'[Tt]ravaux\s+de\s+r[ée]novation[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+            indicateurs.travaux_gros_entretien = self._extract_number(
+                full_text, r'(?:[Gg]ros\s+entretien|travaux\s+d[\'\']entretien)[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+            indicateurs.travaux_mise_conformite = self._extract_number(
+                full_text, r'[Mm]ise\s+en\s+conformit[ée][^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+            indicateurs.travaux_environnementaux = self._extract_number(
+                full_text, r'[Tt]ravaux\s+environnementaux[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)', 1
+            )
+
+            # === RENDEMENT GLOBAL ===
+            if not indicateurs.rendement_global_immobilier:
+                indicateurs.rendement_global_immobilier = self._extract_percentage(
+                    full_text, r'[Rr]endement\s+global\s+immobilier[^\d]*([\-\d,\.]+)\s*%'
+                )
+
+            # === TOF TRIMESTRIELS ===
+            tof_q1 = self._extract_percentage(full_text, r'TOF\s*(?:T1|1er\s+trimestre)[^\d]*([\d,\.]+)\s*%')
+            tof_q2 = self._extract_percentage(full_text, r'TOF\s*(?:T2|2[eè]me?\s+trimestre)[^\d]*([\d,\.]+)\s*%')
+            tof_q3 = self._extract_percentage(full_text, r'TOF\s*(?:T3|3[eè]me?\s+trimestre)[^\d]*([\d,\.]+)\s*%')
+            tof_q4 = self._extract_percentage(full_text, r'TOF\s*(?:T4|4[eè]me?\s+trimestre)[^\d]*([\d,\.]+)\s*%')
+            if tof_q1: indicateurs.tof_t1 = tof_q1
+            if tof_q2: indicateurs.tof_t2 = tof_q2
+            if tof_q3: indicateurs.tof_t3 = tof_q3
+            if tof_q4: indicateurs.tof_t4 = tof_q4
+
+            # === COMMISSION ARBITRAGE ===
+            indicateurs.commission_arbitrage_pct = self._extract_percentage(
+                full_text, r'[Cc]ommission\s+d[\'\']arbitrage[^\d]*([\d,\.]+)\s*%'
+            )
+
+            # === CAPEX CALCULÉ ===
+            if indicateurs.total_travaux and indicateurs.surface_totale:
+                if indicateurs.surface_totale > 0:
+                    indicateurs.capex_par_m2 = indicateurs.total_travaux / indicateurs.surface_totale
+            if indicateurs.total_travaux and indicateurs.valeur_venale_patrimoine:
+                if indicateurs.valeur_venale_patrimoine > 0:
+                    indicateurs.ratio_capex_valeur_venale = (indicateurs.total_travaux / indicateurs.valeur_venale_patrimoine) * 100
+
+            # === NOMBRE D'ACTIFS DIRECT/INDIRECT ===
+            nb_direct = self._extract_number(full_text, r'(\d+)\s+(?:actifs?\s+)?(?:d[ée]tenus?\s+)?en\s+direct', 1)
+            if nb_direct and nb_direct > 0 and nb_direct < 500:
+                indicateurs.nombre_actifs_direct = int(nb_direct)
+            nb_indirect = self._extract_number(full_text, r'(\d+)\s+(?:actifs?\s+)?(?:d[ée]tenus?\s+)?(?:via|par)\s+(?:SCI|OPCI)', 1)
+            if nb_indirect and nb_indirect > 0 and nb_indirect < 200:
+                indicateurs.nombre_actifs_indirect = int(nb_indirect)
+
+            # === FRANCE % ===
+            pct_fr = self._extract_percentage(full_text, r'(?:patrimoine\s+)?(?:en\s+)?France[^\d]*([\d,\.]+)\s*%')
+            if pct_fr and pct_fr > 50:
+                indicateurs.pct_france = pct_fr
+
+            # === DIVIDENDE EXCEPTIONNEL / PLUS-VALUES ===
+            indicateurs.dividende_exceptionnel = self._extract_number(
+                full_text, r'[Pp]lus-values?\s+distribu[ée]es?[^\d]*([\d,\.]+)\s*€', 1
+            )
+
+            # === RÉSULTAT IMMOBILIER ===
+            ri = self._extract_number(full_text, r'[Rr][ée]sultat\s+immobilier[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1)
+            if ri:
+                indicateurs.resultat_immobilier = ri
+
+            # === ENDETTEMENT NET ===
+            if indicateurs.emprunts_bancaires and indicateurs.tresorerie:
+                indicateurs.endettement_net = indicateurs.emprunts_bancaires - indicateurs.tresorerie
+
+            # === DETTES FINANCIÈRES ===
+            indicateurs.dettes_financieres = self._extract_number(
+                full_text, r'[Dd]ettes?\s+financi[èe]res?[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
+            )
+
+            # === PRIX MOYEN M² ===
+            if indicateurs.valeur_venale_patrimoine and indicateurs.surface_totale:
+                if indicateurs.surface_totale > 0:
+                    indicateurs.prix_moyen_m2 = indicateurs.valeur_venale_patrimoine / indicateurs.surface_totale
+
+            # === RAN PAR PART ===
+            if indicateurs.report_a_nouveau and indicateurs.nombre_parts:
+                if indicateurs.nombre_parts > 0:
+                    indicateurs.report_a_nouveau_par_part = indicateurs.report_a_nouveau / indicateurs.nombre_parts
+
+            # === COMMISSIONS MONTANT (calculées) ===
+            if indicateurs.commission_souscription_pct and indicateurs.prix_souscription:
+                indicateurs.commission_souscription_montant = (indicateurs.commission_souscription_pct / 100) * indicateurs.prix_souscription
+            if indicateurs.commission_gestion_pct and indicateurs.capitalisation:
+                indicateurs.commission_gestion_montant = (indicateurs.commission_gestion_pct / 100) * indicateurs.capitalisation
+
+            # === IFI ===
+            ifi_patterns = [
+                r'IFI\s+r[ée]sident[^\d]*([\d,\.]+)\s*€',
+                r'[Vv]aleur\s+IFI[^\d]*([\d,\.]+)\s*€',
+            ]
+            for pattern in ifi_patterns:
+                ifi = self._extract_number(full_text, pattern, 1)
+                if ifi and ifi > 0:
+                    indicateurs.valeur_ifi_resident = ifi
+                    break
+
+            # === BÉNÉFICE COMPTABLE ===
+            indicateurs.benefice_comptable = self._extract_number(
+                full_text, r'[Bb][ée]n[ée]fice\s+(?:comptable|distribuable)[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
+            )
 
             # Extraire les SCIs
             self._extract_scis(full_text, indicateurs.nom_scpi)
