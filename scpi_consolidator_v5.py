@@ -554,13 +554,27 @@ class SCPIConsolidatorV5:
                 full_text, r'[Rr]endement\s+global[^\d]*([\-\d,\.]+)\s*%'
             )
 
-            # === OCCUPATION ===
-            indicateurs.tof_annuel = self._extract_percentage(
-                full_text, r'[Tt]aux\s+d[\'\']occupation\s+financier[^\d]*([\d,\.]+)\s*%'
-            )
-            indicateurs.top_annuel = self._extract_percentage(
-                full_text, r'[Tt]aux\s+d[\'\']occupation\s+physique[^\d]*([\d,\.]+)\s*%'
-            )
+            # === OCCUPATION (patterns améliorés) ===
+            tof_patterns = [
+                r'[Tt]aux\s+d[\'\']occupation\s+financier[^\d]*([\d,\.]+)\s*%',
+                r'TOF[^\d]*([\d,\.]+)\s*%',
+                r'TOF\s+(?:moyen\s+)?(?:annuel\s+)?[^\d]*([\d,\.]+)\s*%',
+            ]
+            for pattern in tof_patterns:
+                tof = self._extract_percentage(full_text, pattern)
+                if tof and 50 < tof < 100:  # TOF réaliste entre 50% et 100%
+                    indicateurs.tof_annuel = tof
+                    break
+
+            top_patterns = [
+                r'[Tt]aux\s+d[\'\']occupation\s+physique[^\d]*([\d,\.]+)\s*%',
+                r'TOP[^\d]*([\d,\.]+)\s*%',
+            ]
+            for pattern in top_patterns:
+                top = self._extract_percentage(full_text, pattern)
+                if top and 50 < top < 100:
+                    indicateurs.top_annuel = top
+                    break
 
             # === PATRIMOINE ===
             indicateurs.nombre_immeubles = self._extract_number(
@@ -627,16 +641,34 @@ class SCPIConsolidatorV5:
             )
 
             # === IDENTIFICATION COMPLÉMENTAIRE ===
-            # Société de gestion
-            sg_patterns = [
-                r'[Ss]oci[ée]t[ée]\s+de\s+gestion\s*[:\s]+([A-Za-zÀ-ÿ\s\-]+?)(?:\n|,|\.)',
-                r'[Gg][ée]r[ée]e?\s+par\s+([A-Za-zÀ-ÿ\s\-]+?)(?:\n|,|\.)',
+            # Société de gestion - patterns améliorés
+            known_managers = [
+                'Sofidy', 'Amundi', 'BNP Paribas REIM', 'La Française', 'Primonial REIM',
+                'Perial AM', 'AEW Patrimoine', 'AEW Ciloger', 'Swiss Life AM', 'Corum AM',
+                'Paref Gestion', 'Inter Gestion REIM', 'Advenis REIM', 'HSBC REIM',
+                'Alderan', 'Altarea', 'Altixia REIM', 'Allianz Real Estate',
+                'Novaxia Investissement', 'Atland Voisin', 'Iroko', 'Remake AM'
             ]
-            for pattern in sg_patterns:
-                match = re.search(pattern, full_text[:10000])
-                if match:
-                    indicateurs.societe_gestion = match.group(1).strip()[:50]
+            # D'abord chercher les noms connus
+            for manager in known_managers:
+                if re.search(rf'\b{re.escape(manager)}\b', full_text, re.IGNORECASE):
+                    indicateurs.societe_gestion = manager
                     break
+
+            # Si pas trouvé, essayer les patterns génériques
+            if not indicateurs.societe_gestion:
+                sg_patterns = [
+                    r'gestion\s+(?:est\s+)?assur[ée]e?\s+par\s+([A-Z][A-Za-z\s\-\.]+?)(?:\s+S\.?A\.?S?|\s+depuis|\n)',
+                    r'[Ss]oci[ée]t[ée]\s+de\s+gestion\s+([A-Z][A-Za-zÀ-ÿ\s\-]+(?:REIM|Gestion|AM))',
+                    r'[Gg][ée]r[ée]e?\s+par\s+([A-Z][A-Za-zÀ-ÿ\s\-]+(?:REIM|AM))',
+                ]
+                for pattern in sg_patterns:
+                    match = re.search(pattern, full_text[:50000])
+                    if match:
+                        sg = match.group(1).strip()
+                        if len(sg) > 3 and len(sg) < 50 and not re.search(r'(adhère|décidé|réserve|capital|portefeuille|www|Lancement)', sg, re.IGNORECASE):
+                            indicateurs.societe_gestion = sg
+                            break
 
             # Visa AMF
             visa_match = re.search(r'[Vv]isa\s+AMF[^\d]*(\d{2}-\d+)', full_text)
@@ -658,19 +690,46 @@ class SCPIConsolidatorV5:
             elif re.search(r'logistique|activit[ée]s', full_text[:10000], re.IGNORECASE):
                 indicateurs.type_scpi = "Logistique/Activités"
 
-            # === TRI DÉTAILLÉS ===
-            indicateurs.tri_5_ans = self._extract_percentage(
-                full_text, r'TRI\s*5\s*ans?[^\d]*([\-\d,\.]+)\s*%'
-            )
-            indicateurs.tri_10_ans = self._extract_percentage(
-                full_text, r'TRI\s*10\s*ans?[^\d]*([\-\d,\.]+)\s*%'
-            )
-            indicateurs.tri_15_ans = self._extract_percentage(
-                full_text, r'TRI\s*15\s*ans?[^\d]*([\-\d,\.]+)\s*%'
-            )
-            indicateurs.tri_20_ans = self._extract_percentage(
-                full_text, r'TRI\s*20\s*ans?[^\d]*([\-\d,\.]+)\s*%'
-            )
+            # === TRI DÉTAILLÉS (patterns améliorés) ===
+            tri_patterns_5 = [
+                r'TRI\s*(?:\(\d\))?\s*5\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+                r'TRI\s*(?:à\s*)?5\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+            ]
+            for pattern in tri_patterns_5:
+                tri5 = self._extract_percentage(full_text, pattern)
+                if tri5 and -20 < tri5 < 20:
+                    indicateurs.tri_5_ans = tri5
+                    break
+
+            tri_patterns_10 = [
+                r'TRI\s*(?:\(\d\))?\s*10\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+                r'TRI\s*(?:à\s*)?10\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+            ]
+            for pattern in tri_patterns_10:
+                tri10 = self._extract_percentage(full_text, pattern)
+                if tri10 and -20 < tri10 < 20:
+                    indicateurs.tri_10_ans = tri10
+                    break
+
+            tri_patterns_15 = [
+                r'TRI\s*(?:\(\d\))?\s*15\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+                r'TRI\s*(?:à\s*)?15\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+            ]
+            for pattern in tri_patterns_15:
+                tri15 = self._extract_percentage(full_text, pattern)
+                if tri15 and -20 < tri15 < 20:
+                    indicateurs.tri_15_ans = tri15
+                    break
+
+            tri_patterns_20 = [
+                r'TRI\s*(?:\(\d\))?\s*20\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+                r'TRI\s*(?:à\s*)?20\s*ans?[^\d]*([\-\d,\.]+)\s*%',
+            ]
+            for pattern in tri_patterns_20:
+                tri20 = self._extract_percentage(full_text, pattern)
+                if tri20 and -20 < tri20 < 20:
+                    indicateurs.tri_20_ans = tri20
+                    break
 
             # === COLLECTE ===
             indicateurs.collecte_brute = self._extract_number(
@@ -917,6 +976,163 @@ class SCPIConsolidatorV5:
             indicateurs.benefice_comptable = self._extract_number(
                 full_text, r'[Bb][ée]n[ée]fice\s+(?:comptable|distribuable)[^\d]*([\d\s,\.]+)\s*(?:€|M€)', 1
             )
+
+            # === CAPITAL STATUTAIRE MAXIMUM ===
+            csm_patterns = [
+                r'capital\s+statutaire\s+maximum[^\d]*([\d\s,\.]+)',
+                r'capital\s+maximum[^\d]*([\d\s,\.]+)\s*€',
+                r'plafond\s+(?:du\s+)?capital[^\d]*([\d\s,\.]+)',
+            ]
+            for pattern in csm_patterns:
+                csm = self._extract_number(full_text, pattern, 1)
+                if csm and csm > 1000000:  # Au moins 1M€
+                    indicateurs.capital_statutaire_max = csm
+                    break
+
+            # === IFI NON RÉSIDENT ===
+            ifi_nr_patterns = [
+                r'IFI\s+non[- ]r[ée]sident[^\d]*([\d,\.]+)\s*€',
+                r'non[- ]r[ée]sident[^\d]{0,30}([\d,\.]+)\s*€',
+            ]
+            for pattern in ifi_nr_patterns:
+                ifi_nr = self._extract_number(full_text, pattern, 1)
+                if ifi_nr and ifi_nr > 0 and ifi_nr < 2000:  # IFI par part < 2000€
+                    indicateurs.valeur_ifi_non_resident = ifi_nr
+                    break
+
+            # === PARTS EN ATTENTE DE RETRAIT (amélioration) ===
+            if not indicateurs.parts_en_attente_retrait:
+                parts_patterns = [
+                    r'(\d[\d\s]*)\s*parts?\s+en\s+attente',
+                    r'en\s+attente\s+de\s+retrait[^\d]*([\d\s]+)\s*parts?',
+                ]
+                for pattern in parts_patterns:
+                    parts = self._extract_number(full_text, pattern, 1)
+                    if parts and parts > 0:
+                        indicateurs.parts_en_attente_retrait = int(parts)
+                        break
+
+            # === MONTANT EN ATTENTE DE RETRAIT ===
+            attente_patterns = [
+                r'montant\s+(?:total\s+)?en\s+attente[^\d]*([\d\s,\.]+)\s*(?:€|M€)',
+                r'en\s+attente[^\d]*([\d\s,\.]+)\s*(?:M€|millions?)',
+                r'attente\s+de\s+retrait[^\d]*([\d\s,\.]+)\s*(?:€|M€)',
+            ]
+            for pattern in attente_patterns:
+                montant = self._extract_number(full_text, pattern, 1)
+                if montant and montant > 0:
+                    indicateurs.montant_attente_retrait = montant
+                    break
+
+            # === MOINS-VALUE DE CESSIONS ===
+            mv_patterns = [
+                r'moins-values?\s+(?:r[ée]alis[ée]es?\s+)?(?:sur\s+)?cessions?[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)',
+                r'moins-values?\s+(?:brutes?\s+)?(?:r[ée]alis[ée]es?)?[^\d]*([\d\s,\.]+)\s*€',
+            ]
+            for pattern in mv_patterns:
+                mv = self._extract_number(full_text, pattern, 1)
+                if mv and mv > 0:
+                    indicateurs.moins_value_cessions = mv
+                    break
+
+            # === TRAVAUX D'AMÉLIORATION ===
+            ta_patterns = [
+                r'travaux\s+d[\'\']am[ée]lioration[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)',
+                r'am[ée]lioration[^\d]*([\d\s,\.]+)\s*(?:K€|M€)',
+            ]
+            for pattern in ta_patterns:
+                ta = self._extract_number(full_text, pattern, 1)
+                if ta and ta > 0:
+                    indicateurs.travaux_amelioration = ta
+                    break
+
+            # === TRAVAUX ENVIRONNEMENTAUX (amélioration) ===
+            if not indicateurs.travaux_environnementaux:
+                te_patterns = [
+                    r'travaux\s+environnementaux[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)',
+                    r'travaux\s+[ée]nerg[ée]tiques?[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)',
+                    r'r[ée]novation\s+[ée]nerg[ée]tique[^\d]*([\d\s,\.]+)\s*(?:€|K€|M€)',
+                ]
+                for pattern in te_patterns:
+                    te = self._extract_number(full_text, pattern, 1)
+                    if te and te > 0:
+                        indicateurs.travaux_environnementaux = te
+                        break
+
+            # === PCT ENSEIGNEMENT ===
+            ens_patterns = [
+                r'enseignement[^\d]*([\d,\.]+)\s*%',
+                r'[ée]ducation[^\d]*([\d,\.]+)\s*%',
+                r'formation[^\d]*([\d,\.]+)\s*%',
+            ]
+            for pattern in ens_patterns:
+                ens = self._extract_percentage(full_text, pattern)
+                if ens and 0 < ens < 50:  # % réaliste
+                    indicateurs.pct_enseignement = ens
+                    break
+
+            # === REVENUS FINANCIERS PAR PART ===
+            rfp_patterns = [
+                r'revenus?\s+financiers?\s+(?:par\s+part)?[^\d]*([\d,\.]+)\s*€(?:\s*par\s+part)?',
+                r'revenus?\s+financiers?[^\d]*([\d,\.]+)\s*€',
+            ]
+            for pattern in rfp_patterns:
+                rfp = self._extract_number(full_text, pattern, 1)
+                if rfp and 0 < rfp < 100:  # < 100€ par part
+                    indicateurs.revenus_financiers_par_part = rfp
+                    break
+
+            # === DIVIDENDE EXCEPTIONNEL (amélioration) ===
+            if not indicateurs.dividende_exceptionnel:
+                de_patterns = [
+                    r'dividende\s+exceptionnel[^\d]*([\d,\.]+)\s*€',
+                    r'acompte\s+exceptionnel[^\d]*([\d,\.]+)\s*€',
+                    r'distribution\s+exceptionnelle[^\d]*([\d,\.]+)\s*€',
+                ]
+                for pattern in de_patterns:
+                    de = self._extract_number(full_text, pattern, 1)
+                    if de and de > 0:
+                        indicateurs.dividende_exceptionnel = de
+                        break
+
+            # === DELAI DE JOUISSANCE (amélioration) ===
+            if not indicateurs.delai_jouissance:
+                dj_patterns = [
+                    r'd[ée]lai\s+de\s+jouissance[^\d]*(\d+)\s*mois',
+                    r'jouissance[^\d]*(\d+)\s*mois',
+                ]
+                for pattern in dj_patterns:
+                    match = re.search(pattern, full_text, re.IGNORECASE)
+                    if match:
+                        indicateurs.delai_jouissance = match.group(1) + " mois"
+                        break
+
+            # === NOMBRE D'ACTIFS (amélioration) ===
+            if not indicateurs.nombre_actifs:
+                na_patterns = [
+                    r'nombre\s+d[\'\'](?:actifs?|immeubles?)[^\d]*(\d+)',
+                    r'(\d+)\s+(?:actifs?|immeubles?)\s+(?:au|en|à)',
+                    r'compos[ée]\s+de\s+(\d+)\s*(?:actifs?|immeubles?)',
+                    r'portefeuille[^\n]{0,30}(\d+)\s*(?:actifs?|immeubles?)',
+                ]
+                for pattern in na_patterns:
+                    na = self._extract_number(full_text, pattern, 1)
+                    if na and 1 < na < 500:
+                        indicateurs.nombre_actifs = int(na)
+                        break
+
+            # === TOF TRIMESTRIELS (amélioration) ===
+            # Chercher dans les tableaux avec format "T1 : XX%" ou "1er trimestre : XX%"
+            if not indicateurs.tof_t1:
+                t1_patterns = [
+                    r'(?:T1|1er\s+trimestre)[^\d]*([\d,\.]+)\s*%[^\n]*(?:occupation|TOF)',
+                    r'(?:occupation|TOF)[^\n]*(?:T1|1er\s+trimestre)[^\d]*([\d,\.]+)\s*%',
+                ]
+                for pattern in t1_patterns:
+                    t1 = self._extract_percentage(full_text, pattern)
+                    if t1 and 50 < t1 < 100:
+                        indicateurs.tof_t1 = t1
+                        break
 
             # Extraire les SCIs
             self._extract_scis(full_text, indicateurs.nom_scpi)
