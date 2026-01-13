@@ -1,0 +1,834 @@
+﻿scpi_source,id_actif,adresse,ville,code_postal,pays,type_actif,surface_m2,quote_part_pct,valeur_venale,travaux_total,travaux_renovation,travaux_gros_entretien,travaux_mise_conformite,travaux_environnementaux,travaux_amelioration,travaux_autres
+lf croissance et territoires rapport annuel 2024,,141 rue de Verdun,"ISSY-LES-MOULINEAUX
+BUR",92130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,6 place Charles Hernu,"VILLEURBANNE
+BUR",69100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,10 rue Émile Zola,"ORLÉANS
+BUR",45000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,23 rue du Bec,"ROUEN
+COM",76000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,15 boulevard Marcel Paul,"SAINT-HERBLAIN
+BUR",44800,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,10 allée de Longchamp,"VILLERS-LÈS-NANCY
+BUR",54600,France,,107.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,72 rue des Sureaux,"SAINGHIN-EN-MÉLANTOIS
+BUR",59262,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,3 avenue de Béguines,"CERGY
+BUR",95800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,1 rue de Chazelles,"PARIS
+BUR",75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,1 rue Michael Faraday,"SAINT-HERBLAIN
+BUR",44800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,40 place du Colombier,"RENNES
+COM",35000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,3 rue de la Coopérative,"STRASBOURG
+BUR",67000,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,5 rue de la Galmy,"CHESSY
+BUR",77000,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,3 place Magellan,"SAINT-HERBLAIN
+BUR",44800,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,3 rue Nationale,"BOULOGNE-BILLANCOURT
+BUR",92100,France,,145.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,90 rue Horace,VILLENEUVE-D,59650,France,,491.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,24 rue Carl Hack,"MULHOUSE
+BUR",68100,France,Activités,491.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,29 place Jourdan,"LIMOGES
+BUR",87000,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,10 rue du Golf,"MÉRIGNAC
+BUR",33700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,1 avenue de l'Europe,TOULOUSE,31400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,4 voie Romaine,PESSAC,33600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,35 avenue de la Marne,MÉRIGNAC,33700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,7 allée Colette Duval,TOURS,37000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,30 rue Chevreul,NANTES,44000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,4 allée de l'île Tabor,NANTES,44200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,7 boulevard Ampère,CARQUEFOU,44470,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,1 avenue des Lions,SAINT-HERBLAIN,44800,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,13 impasse Serge Reggiani,SAINT-HERBLAIN,44800,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,10 rue Horus,VILLENEUVE-D,59650,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,14 rue Horus,VILLENEUVE-D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,29 rue de la Ladrie,VILLENEUVE-D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,80 rue Horace,VILLENEUVE-D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,5 boulevard du Président Wilson,STRASBOURG,67000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,2 rue du Verdon,STRASBOURG,67100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,12 rue du Parc,OBERHAUSBERGEN,67205,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,32 quai de la Loire,PARIS,75019,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,33 rue Pergolèse,PARIS,75116,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,5 rue de la Galmy,CHESSY,77700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,139 chemin des Bassins,CRÉTEIL,94000,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,7 rue Kéréon,QUIMPER,29000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,16 avenue de Gourvily,QUIMPER,29000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,3 rue Condorcet,REIMS,51100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,13 rue du Bois d'Orly,AUGNY,57685,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,86 rue du Molinel,LILLE,59000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,270 avenue de Colmar,STRASBOURG,67000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,82 boulevard Raspail,PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,150 avenue Parmentier,PARIS,75011,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,61 rue du Gros Horloge,ROUEN,76000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,70 allée de Szentendre,SALON-DE-PROVENCE,13300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,201 rue des Sources,ÉCOLE-VALENTIN,25480,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,424 rue Jean Joseph Lenoir,BRUAY-LA-BUISSIÈRE,62700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,57 avenue Pierre Mendès France,MONDEVILLE,14120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,5001 F boulevard de Hochstadt,LUISANT,28600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,25 rue de la Rochelle -,LEMPDES,63370,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,848 avenue des Narcisse,COGOLIN,83310,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,26 rue du Grand Morin,COULOMMIERS,77120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,669 avenue Ambroise Croizat,CROLLES,38921,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,107 chemin du Plessis Saint-Père,SAULX-LES-CHARTREUX,91160,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,14 avenue Ampère,MONTIGNY-LE-BRETONNEUX,78180,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,"118, avenue des Martyrs",PRÉMILHAT,03410,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,9000 rue henri Bouquillard,NEVERS,58000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,1935 avenue de l'Espagne,PERPIGNAN,66000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,15 bis rue de la Rigoudière,CESSON-SÉVIGNÉ,35510,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,"11, avenue Jean Mermoz",ANDRÉZIEUX-BOUTHÉON,42160,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,2 bis rue des Wagon,SAINT-DENIS-LÈS-SENS,89100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,7 rue de l'Artisanat,FEGERSHEIM,67640,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,6 rue Amédée de Foras,THONON-LES-BAINS,74200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,85 avenue Grand Sud,CHAMBRAY-LES-TOURS,37170,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,82 allée des Ailes -,VICHY,03200,France,Santé,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,147 rue Jean Giono,FRÉJUS,83370,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,102 boulevard Faidherbe,RUMILLY-EN-CAMBRESIS,59281,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+lf croissance et territoires rapport annuel 2024,,772 chemin de Valdegour,NÎMES,30900,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRISTAL LIFE,,"70 bis, rue Mademoiselle –","PARIS
+L",75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRISTAL LIFE,,"38 avenue de l’Opéra,",PARIS,75002,France,,,100.0,240000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,41 rue du Capitaine Guynemer -,"COURBEVOIE
+B",92400,France,Bureaux,,100.0,57701043.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,41 avenue Gambetta -,"LA DEFENSE CEDEX
+T",92928,France,,,100.0,57701043.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,41 rue du Capitaine Guynemer –,COURBEVOIE,92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,40 rue Laure Diebold -,LYON,69009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,189 avenue Charles de Gaulle -,"NEUILLY-SUR-SEINE
+D",92200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,29 boulevard Haussmann –,"PARIS
+O",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,41 avenue Gambetta,LA DEFENSE CEDEX,92928,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,2 Rue de Bastia -,"STRASBOURG 
+T",67100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,4 Rue de la Croix Verte -,"AUTUN
+R",71400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,99 avenue d'Argenteuil -,ASNIERES SUR SEINE,92600,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,191 rue Gallieni -,BOULOGNE BILLANCOURT,92100,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,5 rue Augereau -,PARIS,75007,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,118 rue de la Croix Nivert -,PARIS,75015,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,56 boulevard Diderot -,PARIS,75012,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,78 boulevard Voltaire -,PARIS,75011,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,167 avenue Gambetta -,PARIS,75020,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,9 Bis rue Boileau -,PARIS,75116,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,13 rue Poirier de Narcay -,PARIS,75014,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,20 rue Caulaincourt -,PARIS,75018,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,55 boulevard Voltaire -,PARIS,75011,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,95 avenue de la Marne -,ASNIERES SUR SEINE,92600,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,105 rue de l'Ardèche -,STRASBOURG,67100,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,67 rue de la Jonquière -,PARIS,75017,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,18 rue Rollin -,PARIS,75005,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,40 rue de Prony -,PARIS,75017,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,13 rue Linné -,PARIS,75005,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,13 bis rue Saint Maur -,PARIS,75011,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,100 rue Legendre -,PARIS,75017,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,22 rue Monnier -,PARIS,75009,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,43 rue Laffitte -,PARIS,75009,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,39 rue du Faubourg Montmartre -,PARIS,75009,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,100 rue Simon Bolivar -,PARIS,75019,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,41 rue de Poitou -,PARIS,75003,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,28 Place de l'Europe -,RUEIL MALMAISON,92500,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,111 rue Anatole France -,VILLEURBANNE,69100,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,156 rue Gambetta -,SURESNES,92150,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,17 boulevard Malesherbes -,PARIS,75008,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,19 rue Washington -,PARIS,75008,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,10 rue d'Aguesseau -,BOULOGNE BILLANCOURT,92100,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,89 boulevard Montparnasse -,PARIS,75006,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,17 rue de Paradis -,PARIS,75010,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,27 avenue Félix Viallet -,GRENOBLE,38000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,48 rue Jeanne d'Arc -,ORLEANS,45000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,12 rue du Vieux Marché -,STRASBOURG,67000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,90 avenue de la République -,PARIS,75011,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,22 avenue de Flandre -,PARIS,75019,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,81 boulevard Malesherbes -,PARIS,75008,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,5 place Saint Sébastien -,NEVERS,58000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,57 rue de la République -,CHARLEVILLE MEZIERES,08000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,17 rue des Blanc Manteaux -,PARIS,75004,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,20 rue de la Verrerie -,PARIS,75004,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,24 rue de la Boétie -,PARIS,75008,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,40 rue Richer -,PARIS,75009,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,24 rue Saint Sulpice -,PARIS,75006,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,1 rue Trétaigne -,PARIS,75018,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,45 rue du Faubourg Montmartre -,PARIS,75009,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,6 rue de Clignancourt -,PARIS,75018,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,7 avenue du Général de Gaulle -,ST MANDE,94160,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,63 rue Saint Denis -,COLOMBES,92700,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,25 avenue Claude Vellefaux -,PARIS,75010,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,19 rue Parmentier -,MONTREUIL SOUS BOIS,93100,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,89 rue du Faubourg du Temple -,PARIS,75010,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,89 rue Daguerre -,PARIS,75014,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,24 rue Saint Placide -,PARIS,75006,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,137 rue du Faubourg Saint Antoine -,PARIS,75011,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,12 Bis rue des Clercs -,GRENOBLE,38000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,6 rue de Strasbourg -,BRUGES,33520,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,12 rue de Berlin -,VITROLLES,13127,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,20 avenue de l'Europe -,RONCQ,59223,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,16 Place de la Paix -,SAINT-HERBLAIN,44800,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,31 Rue du Chemin Vert -,PONT PÉAN,35131,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,12 Avenue Anatole France -,TRIGNAC,44570,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,43 Rue des Halles -,CARQUEFOU,44470,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,5 RUE FREYSSINET -,LANGUEUX,22600,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,17 RUE FULGENCE BIENVENUE -,LANGUEUX,22360,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,1 AVENUE TAVEL -,LES ANGLES,30133,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,33 RUE LE CORBUSIER -,CRETEIL,94000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,15 AVENUE ANDRÉ ROUSSIN -,MARSEILLE,13016,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,18 Rue de la Petite Sensive -,NANTES,44300,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,8 Avenue Pierre Gueguin -,CONCARNEAU,29900,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,77 Rue de la Louvière -,RAMBOUILLET,78120,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,32 RUE DE LA LIBERTÉ -,DIJON,21000,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,18 Avenue de la Convention -,BONNEUIL SUR MARNE,94380,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,77 RUE DE PARIS -,CLICHY,92110,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,36 BIS RUE AMIRAL LINOIS -,BREST,29200,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,23 Rue Adolphe Thiers -,BOULOGNE-SUR- MER,62200,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,31 Place d'Armes -,DOUAI,59500,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,275 Boulevard Marcel Paul -,SAINT-HERBLAIN,44800,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CAPIFORCE,,174 Chemin de Pioch Courbi,GIGNAC,34150,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,4 avenue de Galilée -,"BALMA
+L",31130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,200 rue Denis Papin -,"BARENTIN
+P",76360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,17 rue du Président Kruger -,"COURBEVOIE
+T",92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,4 avenue Galilée - Verdauja -,"BALMA
+S",31130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,29 rue Taitbout -,"PARIS
+T",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,13 rue Augustre Perret -,"CRETEIL
+I",94000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,43 boulevard Vauban -,"GUYANCOURT 
+T",78280,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,123 rue du Vieux Pont de Sèvres -,"BOULOGNE 
+R",92100,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,400 avenue Roumanille -,"BIOT
+T",06410,France,,,100.0,9818.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,20 rue la Boétie -,"PARIS
+L",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,34 QUAI DE MAGELLAN,NANTES FRANCE,44000,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,14 RUE WOLFENBUTTEL,SEVRES FRANCE,92310,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,1 RUE DU PRE SAINT GERVAIS,PANTIN FRANCE,93500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,3 RUE NATIONALE,BOULOGNE FRANCE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,34 AVENUE GAMBETTA,HYERES FRANCE,83400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,90 RUE DE PARIS,BOULOGNE BILLANCOURT FRANCE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,26 RUE DES CARMES,PARIS FRANCE,75005,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,14 RUE SCANDICCI,PANTIN FRANCE,93500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,8 RUE WOLFENBUTTEL,SEVRES FRANCE,92310,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,42 BOULEVARD GUIST'HAU,NANTES FRANCE,44000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,29 RUE TRONCHET,PARIS FRANCE,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,20 PLACE SALVADOR ALLENDE,VILLENEUVE D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,34 QUAI MAGELLAN,NANTES FRANCE,44000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,2 RUE DU GENERAL PACTHOD,SAINT JULIEN EN GENEVOIS FRANCE,74133,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,12 RUE EDMOND MICHELET,NEUILLY PLAISANCE FRANCE,93360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,33 RUE DES CHARDONNERETS,TREMBLAY EN FRANCE FRANCE,93290,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,17 RUE DU PRESIDENT KRUGER,COURBEVOIE FRANCE,92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,400 AVENUE ROUMANILLE,BIOT-SOPHIA ANTIPOLIS FRANCE,06410,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,200 RUE DENIS PAPIN,BARENTIN FRANCE,76360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,10 PLACE SALVADOR ALLENDE,VILLENEUVE D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,131 RUE DE PARIS,MASSY FRANCE,91300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,2 RUE GIOTTO,RAMONVILLE FRANCE,31520,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,989 RUE CROIX VERTE PROLONGEE,MONTPELLIER FRANCE,34100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,740 AVENUE DES APOTHICAIRES,MONTPELLIER FRANCE,34000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,20 RUE LOUIS GUERIN,VILLEURBANNE FRANCE,69100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,3 CHEMIN DU PALAY,TOULOUSE FRANCE,31400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,41 RUE SAINTE ANNE DE BARABAN,LYON CEDEX FRANCE,69441,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,3 RUE DE LA RAINIERE,NANTES CEDEX,44077,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,185 RUE LEON BLUM,MONTPELLIER FRANCE,34000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,68 COURS ALBERT THOMAS,LYON FRANCE,69008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,25 RUE AUGUSTE PERRET,CRETEIL FRANCE,94000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,13 CHEMIN DU VIEUX CHENE,ZIRST MEYLAN FRANCE,38240,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,16 AVENUE THIERS,NICE FRANCE,06000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,206 RUE DE GERLAND,LYON FRANCE,69007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,17 AVENUE DU PARC,CHILLY MAZARIN FRANCE,91380,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,27 RUE DE BUZENVAL,PARIS FRANCE,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,11 RUE MAURICE GRANDCOING,IVRY FRANCE,94200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,20 BIS RUE DE LA BOETIE,PARIS FRANCE,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,6 RUE D'UZES,PARIS FRANCE,75002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,2 RUE DE LA LOIRE,NANTES FRANCE,44000,France,Activite,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,4 BIS RUE DE LA GARE,LEVALLOIS PERRET FRANCE,92300,France,Activite,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,4 PLACE DE LA MARNE,BUSSY ST GEORGES FRANCE,77600,France,Activite,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,1 RUE DE BRUGES,DIJON FRANCE,21000,France,Activite,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,4 AVENUE DE GALILEE,BALMA FRANCE,31130,France,Activite,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,103 BOULEVARD DE LA SALLE,BOIGNY SUR BIONNE FRANCE,45760,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,32 AVENUE DU PAVE NEUF,NOISY LE GRAND FRANCE,93160,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,20 RUE DU PONT DE L'ARCHE,ST AVERTIN FRANCE,37550,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,6 RUE ALAIN COLAS,NANTES FRANCE,44000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,9 RUE CLAUDE CHAPPE,METZ FRANCE,57000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,51 AVENUE JEAN JAURES,LYON FRANCE,69007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,121 GRANDE RUE,SEVRES FRANCE,92310,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,89 RUE DU GAL FELIX EBOUE,ISSY LES MOULINEAUX FRANCE,92130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,261 RUE DE PARIS,MONTREUIL FRANCE,93100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,37 RUE BALARD,PARIS FRANCE,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,123 RUE DU VIEUX PONT DE SEVRES,BOULOGNE FRANCE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,29 RUE TAITBOUT,PARIS FRANCE,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,172 RUE DE PARIS,LILLE FRANCE,59000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,6 RUE DES VERDIERS,MONTIVILLIERS FRANCE,76290,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,1 RUE DE CHAZELLES,PARIS FRANCE,75017,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,35 RUE PERGOLESE,PARIS FRANCE,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,15 AVENUE LEBRUN,ANTONY FRANCE,92160,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,35 RUE GAMBETTA,NANTES FRANCE,44000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,47 AVENUE DE VERSAILLES,PARIS FRANCE,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,358 RUE DE VAUGIRARD,PARIS FRANCE,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,38 RUE DES MARTYRS,PARIS FRANCE,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,151 RUE SAINT MARTIN,PARIS FRANCE,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,26 BOULEVARD DE LA LIBERTE,LILLE FRANCE,59800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,188 AVENUE DU GENERAL DE GAULLE,NEUILLY SUR SEINE FRANCE,92200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,381 RUE DE VAUGIRARD,PARIS FRANCE,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,99 RUE ORDENER,PARIS FRANCE,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,101 RUE DE PRONY,PARIS FRANCE,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,50 RUE LOUIS ROUQUIER,LEVALLOIS PERRET FRANCE,92300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,107 COURS EMILE ZOLA,VILLEURBANNE FRANCE,69100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,50 RUE DONZELOT,NEUILLY SUR MARNE FRANCE,93300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,15 RUE THIERS,BAYONNE FRANCE,64100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,101 RUE SAINT DOMINIQUE,PARIS FRANCE,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,5 PLACE PAUL CLAUDEL,MONTIGNY LE BRETONNEUX FRANCE,78180,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,255 AVENUE DU PRADO,MARSEILLE FRANCE,13008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,89 RUE DE SEINE,PARIS FRANCE,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,29 AVENUE DU GENERAL LECLERC,PARIS FRANCE,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,15 RUE DE PASSY,PARIS FRANCE,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,32 RUE DE LA SALIE,BAYONNE FRANCE,64100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,167 BOULEVARD SAINT GERMAIN,PARIS FRANCE,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,95 RUE DE SEINE,PARIS FRANCE,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,10 BIS BOULEVARD JEAN JAURES,BOULOGNE BILLANCOURT FRANCE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,21 RUE AUGUSTE MOUNIE,ANTONY FRANCE,92160,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,17A AVENUE DU Dr ARNOLD,PARIS FRANCE,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,28 RUE DIDEROT,NANTERRE FRANCE,92000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,6 RUE STEPHEN LIEGEARD,DIJON FRANCE,21000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,114 BOULEVARD JEAN JAURES,BOULOGNE BILLANCOURT FRANCE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,45 RUE HOUDAN,SCEAUX FRANCE,92330,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,13 RUE DE TALLEYRAND,REIMS FRANCE,51100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,35 RUE DE L'EGLISE,ANTONY FRANCE,92160,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,9 RUE DE MAUBEUGE,PARIS FRANCE,75009,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,90 RUE BONTE POLLET,LILLE FRANCE,59000,France,Hôtels,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,32 QUAI DE LA LOIRE,PARIS FRANCE,75019,France,Hôtels,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,17 RUE NATIONALE,BELLE EGLISE FRANCE,60540,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,138 AVENUE VICTOR HUGO,PARIS FRANCE,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,104 AVENUE DU PDT KENNEDY,PARIS FRANCE,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,208 AVENUE BERTHELOT,LYON FRANCE,69007,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,89 rue de Seine -,"PARIS
+L",75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,90 rue de Miromesnil -,"PARIS
+À",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,1 rue de Chazelles  -,"PARIS
+L",75017,France,,,100.0,400000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,"37 rue Edouard Vaillant,",TOURS,37000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aestiam placement pierre rapport annuel 2024,,32 avenue du Pavé Neuf  -,"NOISY LE GRAND
+L",93051,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,41 rue du Capitaine Guynemer -,"COURBEVOIE
+B",92400,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,41 avenue Gambetta -,"LA DEFENSE CEDEX
+T",92928,France,Commerce,,100.0,437025375.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,41 rue du Capitaine Guynemer –,COURBEVOIE,92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,19 rue Clément Marot -,"PARIS
+S",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,40 rue Laure Diebold -,"LYON
+S",69009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,131 avenue de Wagram –,"PARIS
+D",75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,91 rue Gabriel Péri -,"MONTROUGE
+O",92120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,41 avenue Gambetta,LA DEFENSE CEDEX,92928,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,93 Boulevard de Sébastopol,PARIS,75002,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,11 Rue Neuve Popincourt,PARIS,75011,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,63 Rue de Ponthieu,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,10 Rue Pergolèse -,PARIS,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,65 Rue Rennequin -,PARIS,75017,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,4 Rue Stéphane Mony,SAINT GERMAIN EN LAYE,78100,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,390 Rue d'Estienne d'Orves,COLOMBES,92700,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,87 Rue du Château -,BOULOGNE BILLANCOURT,92100,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,31 Rue de Douai,LESQUIN,59810,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,121 Boulevard Valmy,VILLENEUVE D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,160 Rue d'Antibes,CANNES,06400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,43 Place de Jaude,CLERMONT FERRAND,63000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,9 Boulevard de Verdun -,ORLEANS,45000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,121 Boulevard de Valmy -,VILLENEUVE D,59650,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,6 rue des Peupliers,LESQUIN,59810,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,3 allée d’Helsinki,SCHILTIGHEIM,67300,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,"31 avenue Gustave Eiffel,",PESSAC,33600,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue Fonvielle - Rue Paul Mériel,TOULOUSE,31000,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,3 Rue Caulaincourt -,PARIS,75018,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,9 Place Denfert Rochereau -,PARIS,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,14 Rue du Faubourg Poissonnière -,PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,22 Rue des Petits Champs -,PARIS,75002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,110 Rue des Pyrénées -,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,8 Rue de Belleville -,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,66 Avenue Victor Hugo -,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,80 Rue de Sèvres -,PARIS,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,76 Boulevard Beaumarchais -,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,10 Rue des Lombards -,PARIS,75004,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,48 Bis Quai de Jemmapes,PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,34 Rue Dauphine,PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,94 Rue Cambronne,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,70 Rue du Faubourg Poissonnière,PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,125 Rue Ordener,PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,67 Avenue Arnold Netter,PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,5 Rue Franklin,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,99 Rue de Rennes,PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,93 Boulevard Magenta,PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,45 Bis Rue des Acacias,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,62 Boulevard Ornano,PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,252 Rue du Faubourg Saint-Martin,PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,206 Rue du Faubourg Saint-Antoine,PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,8 Rue Brantome,PARIS,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,26 Rue du Roi de Sicile,PARIS,75004,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,73 Rue du Cherche Midi,PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,48 Rue de Belleville,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,19 Rue de Washington,PARIS,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,15 Rue de la Roquette,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,61 Rue Saint Denis,PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,78 Avenue Kléber,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,7 Quai Voltaire,PARIS,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,61 Rue Montorgueil,PARIS,75002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,66 Rue Saint Louis en L'Isle,PARIS,75004,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,25 Boulevard de la Tour Maubourg,PARIS,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,96 Rue de Courcelles,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,45 Rue Rochechouart,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,2 Rue Delbet,PARIS,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,199 Bis Rue de la Convention,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue Foucarde,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,46 Rue d'Auteuil,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue Benjamin Godard,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,2 Rue Ciramosa,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,64 Rue de Passy,PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Rue le Chatellier,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,71 Rue Guy Moquet,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,50 Rue Damrémont,PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,98 Rue de Flandre,PARIS,75019,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,76 Boulevard Saint-Marcel,PARIS,75005,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,38 Cours de Vincennes,PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,23 Boulevard Richard Lenoir,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,22 Place des Innocents,PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,36 Rue de Rambuteau,PARIS,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,66 Avenue des Ternes,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,369 Rue des Pyrénées,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,99 Rue des Orteaux,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,192 Rue Cardinet,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,121 Rue des Dames,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,124 Rue de Belleville,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,100 Rue de L'Ouest,PARIS,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,84 Rue de Maubeuge,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,24 Rue de l'Etoile,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,29 Rue Oberkampf,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Rue Brezin,PARIS,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,5 Avenue Gambetta,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,107 Avenue de Clichy,PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,39 Rue Didot,PARIS,75014,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,76 Boulevard de Belleville,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue du Rendez-Vous,PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,66 Rue Lafayettte,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,27 Avenue de Marigny,PARIS,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,131 Rue Saint-Denis,PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,94 rue St Lazare,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,21 Rue Danielle Casanova,PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,2 Rue Beccaria,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,39 Boulevard Raspail,PARIS,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,19 Rue Desaix,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,6 Rue Violet,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue Carrier Belleuse,PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,31 Rue Fontaine,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,45 Boulevard de Clichy,PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,56 Bis Rue Buzenval,PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,257 Rue du Faubourg Saint Antoine,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,"26, rue de Rivoli",PARIS,75004,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,104 Boulevard de Clichy,PARIS,75018,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,132 rue de la Roquette,PARIS,75011,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,82 Avenue de Wagram,PARIS,75017,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,39 Boulevard Bordier -,MONTIGNY LES CORMEILLES,95370,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,35 Rue de Soisy,EAUBONNE,95600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,"261 Rue de Paris - ""Le Méliès""",MONTREUIL,93100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue de Paris,LE PORT MARLY,78560,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,21 Rue du Marché -,NANTERRE,92000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,38 Avenue Franklin Roosevelt -,VINCENNES,94300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,30 Rue Montrosier,NEUILLY SUR SEINE,92200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,80 Avenue d'Argenteuil,ASNIERES,92600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,34 Avenue Victor Hugo,VANVES,92170,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,91 Rue de Bellevue,BOULOGNE BILLANCOURT,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,226 Avenue Jean Jaurès,CLAMART,92140,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,27 Rue Jean Lolive,PANTIN,93500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,38 Grande Rue,ASNIERES,92600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Rue de Bondy,AULNAY SOUS BOIS,93600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,16 Boulevard de la Liberté,CHATILLON,92320,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,18 Rue Paul Vaillant Couturier,CLAMART,92140,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,34 Place du Comte Haymon,CORBEIL ESSONNES,91100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,41 Rue du Général de Gaulle,ENGHIEN LES BAINS,95800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,108 Grande Rue,FONTAINEBLEAU,77300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue des Marchands,LAGNY SUR MARNE,77400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,53 Avenue Pierre Larousse,MALAKOFF,92240,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,7 Place des Arts - Centre Commercial Joli Mai,MEUDON LA FORET,92360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,34 Ter Avenue du Maréchal Foch / Avenue Georges Clémenceau,NEUILLY PLAISANCE,93360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue Edmond,NOGENT SUR MARNE,94130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,5 Rue Archangé,ORSAY,91400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Rue du Général de Gaulle,RAMBOUILLET,78120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,198 Rue Houdan / Avenue de la Gare,SCEAUX,92330,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,9 Avenue du Général de Gaulle,VELIZY VILLACOUBLAY,78140,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,19 Rue Georges Clémenceau,VERSAILLES,78000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,37 Rue Emile Combes,HOUILLES,78800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,158 Avenue Charles de Gaulle,COLOMBES,92700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,62 Rue Maurice Thorez,NANTERRE,92000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,79 Avenue du Général de Gaulle,RAMBOUILLET,78120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Avenue de la Victoire,MEAUX,77100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,32 Avenue du Roule,NEUILLY SUR SEINE,92200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,2 Place du Sancerrois,MAUREPAS,78310,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue Fontaine,SAINT-DENIS,93200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,4 Rue de Gisors,PONTOISE,95000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,52 Rue Pottier,LE CHESNAY,78150,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue des Marchés,VAUREAL,95490,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,32 Avenue Pierre Brossolette,MALAKOFF,92240,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,29 Rue des Promenades,LA FERTE GAUCHER,77320,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,35 Boulevard Victor Bordier,MONTIGNY LES CORMEILLES,95370,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,27 Rue Trébois,LEVALLOIS-PERRET,92300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,38 Rue du Chemin de Fer,LAGNY SUR MARNE,77400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,15 Rue du Mont Valérien,SURESNES,92150,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,5 Boulevard Pierre Mendès France,CHELLES,77500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,8 Place Aribault - Avenue de la République,PONTAULT-COMBAULT,77340,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,103 Boulevard de Stalingrad - Rue Jules Lagaisse,VITRY SUR SEINE,94400,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,"2, Avenue des Sablons Bouillants",MEAUX,77100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,14 Boulevard de l'Oise,CERGY,95000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue Vasselot -,RENNES,35100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Place Gordaine -,BOURGES,18000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,6 Place des Epars -,CHARTRES,28000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,115 Cours Fauriel -,SAINT ETIENNE,42100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,18 rue des Vies Vieilles,ROANNE,42300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,6 Rue Saint-François -,QUIMPER,29000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,24 Rue Pigacière,CAEN,14000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,851 Avenue de la République,MARCQ EN BAR,59700,France,Hôtel,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,37 Rue du Jeu des Enfants,STRASBOURG,67000,France,Hôtel,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,11 Place de l'Hôtel de Ville,COMPIEGNE,60200,France,Hôtel,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,4 Rue du Général Leclerc,AMIENS,80000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,10 Boulevard Davout,AUXERRE,89000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,86 Boulevard Carnot,CANNES,06400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,19 Rue Jean Lecanuet,ROUEN,76000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,76 Boulevard d'Angleterre,LA ROCHE SUR YON,85000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,6 Rue Charles Saint-Venant,LILLE,59000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,100 Cours Gambetta,LYON,69007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,15 Rue Lepouze,EVREUX,27000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,1 Rue de la Hallebarde,ORLEANS,45000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,11 Allée du Haut du Poitou,CHASSENEUIL DU POITOU,86360,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,50 Avenue des Fenots,DREUX,28100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,119 Rue Nationale,CHOLET,49300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,159 Rue Jean Zay,SAINT JEAN DE BRAYE,45800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 Place Gordaine,BOURGES,18000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,2 Rue Idrac,TOULOUSE,31000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,4 Rue Robert Turgot,NIORT,79000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,5 Rue des Fourneaux,AUXERRE,89000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,24 Rue de la Regratterie,POITIERS,86000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,20 Rue Saint-Exupéry,LE VERSOUD,38420,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,17 Avenue de Dordogne,SARLAT,24200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,16 Rue Royale,ANNECY,74000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,3 Rue du Clos Marchand,SAINT-BENOIT,86280,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,12 Rue du Temple,AUXERRE,89000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,25 Rue Thiers,BAYONNE,64100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,35 Rue du Sauvage,MULHOUSE,68100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,13 rue Michel Montaigne,BORDEAUX,33000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,24 Rue Maurice Fonvielle,TOULOUSE,31000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,43 Rue de la Victoire de la Marne,CHAUMONT,52000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,17 rue du Président Edouard Herriot,LYON,69001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,14 Place d'Armes,VALENCIENNES,59300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,172 Boulevard Gustave Flaubert,CLERMONT FERRAND,63000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,4 avenue de l'Impératrice,BIARRITZ,64200,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,336 avenue André Maginot,TOURS,37100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,8 Rue Raoul Follereau,TOURS,37000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,190 Boulevard de Verdun –,"COURBEVOIE
+D",92400,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+FICOMMERCE PROXIMITE,,96 Avenue de Paris –,"VERSAILLES
+D",78000,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"11 Allée De l’Arche,",COUREBVOIE,92400,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"39 Avenue Trudaine,","PARIS 
+E",75009,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"9 rue Emile Borel,","PARIS 
+E",75017,France,Bureaux,26304.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,2 Rue Ancelle,"NEUILLY-SUR-SEINE  
+P",92200,France,Santé,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"8 Rue du Werkhof,","MULHOUSE 
+E",68100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"57 Quai Georges Gorse,","BOULOGNE-BILLANCOURT
+E",92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,"4 Place de Budapest,","PARIS
+P",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,11 place de Brazzaville,"PARIS
+E",75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,45 rue des Vinaigriers,PARIS,75010,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,44 avenue George V,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,136 avenue des Champs Elysées,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,9 rue Leo Delilbes,PARIS,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,79 rue de Miromesnil,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,60 Rue de Saxe,PARIS,75007,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,189 quai de Valmy,PARIS,75010,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,166 rue du Faubourg-Saint-Honoré,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,85 boulevard Vincent Auriol,PARIS,75013,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,36 rue du Louvre,PARIS,75001,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,105 rue du Faubourg Saint-Honoré,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,20 rue Hector Malot,PARIS,75012,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,27 rue Daviel,PARIS,75013,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,33 rue de Maubeuge,PARIS,75009,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,66 avenue Victor Hugo,PARIS,75016,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,127 rue de Flandre,PARIS,75019,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,62 avenue de la Motte Picquet,PARIS,75015,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,4 place Clichy,PARIS,75009,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,14 rue du commerce,PARIS,75015,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,11 rue de Rouvray,"NEUILLY 
+SUR SEINE",92200,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,13 rue Alexandre Fleming,ORSAY,91400,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,94 rue Delayrac,"FONTENAY 
+SOUS BOIS",94120,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,38 quai Georges Gorse,"BOULOGNE 
+BILLANCOURT",92100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,11 avenue de La Résistance,"SAINTE 
+GENEVIÈVE DES 
+BOIS",91700,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,19 rue de la Villette,LYON,69003,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,38 avenue de Ventadour,TULLE,19000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,24 rue Grignan,MARSEILLE,13001,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+rivoli avenir patrimoine rapport annuel 2024,,93 boulevard Pasteur -,PARIS - A,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTIXIA COMMERCES,,32 avenue Marceau -,"PARIS
+DATE D",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+EUROVALYS,,"52 rue de Bassano,",PARIS,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+EUROVALYS,,52 Rue De Bassano,"PARIS
+O",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTIXIA CADENCE XII,,32 avenue Marceau -,"PARIS
+DATE D",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Eden
+SCPI 
+Eden
+Rapport annuel",,91 rue Gabriel Peri,"MONTROUGE
+C",92120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Eden
+SCPI 
+Eden
+Rapport annuel",,52 Rue De Bassano,"PARIS
+O",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pierre selection rapport annuel 2024,,"50, cours de l’île Seguin","BOULOGNE-BILLANCOURT
+N",92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pierre selection rapport annuel 2024,,"2, avenue Gambetta","PARIS LA DÉFENSE CEDEX 
+C",92066,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pierre selection rapport annuel 2024,,"16, boulevard des Italiens","PARIS
+E",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pierre selection rapport annuel 2024,,"131, avenue de Wagram","PARIS
+JONES LANG LASALLE EXPERT",75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pierre selection rapport annuel 2024,,"42, rue La Boétie","PARIS
+L",75008,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"11 Allée De l’Arche,",COUREBVOIE,92400,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"39 Avenue Trudaine,","PARIS 
+E",75009,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"9 rue Emile Borel,","PARIS 
+E",75017,France,Bureaux,26304.0,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,2 Rue Ancelle,"NEUILLY-SUR-SEINE  
+P",92200,France,Santé,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"8 Rue du Werkhof,","MULHOUSE 
+E",68100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"57 Quai Georges Gorse,","BOULOGNE-BILLANCOURT
+E",92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,"4 Place de Budapest,","PARIS
+P",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,11 place de Brazzaville,"PARIS
+E",75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,45 rue des Vinaigriers,PARIS,75010,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,44 avenue George V,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,136 avenue des Champs Elysées,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,9 rue Leo Delilbes,PARIS,75016,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,79 rue de Miromesnil,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,60 Rue de Saxe,PARIS,75007,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,189 quai de Valmy,PARIS,75010,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,166 rue du Faubourg-Saint-Honoré,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,85 boulevard Vincent Auriol,PARIS,75013,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,36 rue du Louvre,PARIS,75001,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,105 rue du Faubourg Saint-Honoré,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,20 rue Hector Malot,PARIS,75012,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,27 rue Daviel,PARIS,75013,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,33 rue de Maubeuge,PARIS,75009,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,66 avenue Victor Hugo,PARIS,75016,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,127 rue de Flandre,PARIS,75019,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,62 avenue de la Motte Picquet,PARIS,75015,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,4 place Clichy,PARIS,75009,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,14 rue du commerce,PARIS,75015,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,11 rue de Rouvray,"NEUILLY 
+SUR SEINE",92200,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,13 rue Alexandre Fleming,ORSAY,91400,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,94 rue Delayrac,"FONTENAY 
+SOUS BOIS",94120,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,38 quai Georges Gorse,"BOULOGNE 
+BILLANCOURT",92100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,11 avenue de La Résistance,"SAINTE 
+GENEVIÈVE DES 
+BOIS",91700,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,19 rue de la Villette,LYON,69003,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,38 avenue de Ventadour,TULLE,19000,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,24 rue Grignan,MARSEILLE,13001,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+RIVOLI AVENIR PATRIMOINE AN 2,,93 boulevard Pasteur -,PARIS - A,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALLIANZ PIERRE,,1 Cours Michelet,"PUTEAUX
+O",92800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRISTAL RENTE,,"70 bis, rue Mademoiselle –","PARIS
+L",75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRISTAL RENTE,,"38 avenue de l’Opéra,",PARIS,75002,France,,,100.0,240000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ELIALYS,,91 rue Gabriel Peri,"MONTROUGE
+C",92120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ELIALYS,,52 Rue De Bassano,"PARIS
+O",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCIMMO PIERRE,,"50, cours de l’île Seguin","BOULOGNE-BILLANCOURT
+N",92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCIMMO PIERRE,,"2, avenue Gambetta","PARIS LA DÉFENSE CEDEX
+C",92066,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCIMMO PIERRE,,"16, boulevard des Italiens","PARIS
+E",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCIMMO PIERRE,,"42, rue La Boétie","PARIS
+C",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCIMMO PIERRE,,"185, avenue de Général de Gaulle","NEUILLY-SUR-SEINE
+L",92200,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,41 rue du Capitaine Guynemer -,"COURBEVOIE
+B",92400,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,41 avenue Gambetta -,"LA DEFENSE CEDEX
+T",92928,France,Commerce,,100.0,207731550.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,41 rue du Capitaine Guynemer –,COURBEVOIE,92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,40 rue Laure Diebold -,LYON,69009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,109 rue du Faubourg Saint-Honoré -,PARIS,75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,131 avenue de Wagram –,"PARIS
+D",75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"91, rue Gabriel Péri -","MONTROUGE
+O",92120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"61, rue Saint André des Arts",PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"45, rue de la Jonquière",PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"63, rue de Clichy",PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"61, rue Ramey",PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"16, rue Maublanc",PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"8, rue Guy Moquet",PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"48, rue Condorcet",PARIS,75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"30, avenue Félix Faure",PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"35, avenue Stéphen Pichon",PARIS,75013,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"30, avenue Gambetta",PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"90, rue de Javel",PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"200, rue de Belleville",PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"98, rue du Fg Poissonnière",PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"53, rue du Simplon",PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"17, place des Vosges",PARIS,75004,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"16, rue Duvivier",PARIS,75007,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"89, rue Saint Honoré",PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"129, rue Legendre",PARIS,75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"34, rue Poissonnière",PARIS,75002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"4, rue Bourbon le Chateau",PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"69, rue de Maubeuge",PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"74, boulevard d'Ornano",PARIS,75018,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"60, rue Meslay",PARIS,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"40, rue du Général Beuret",PARIS,75015,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, rue Brantôme",PARIS,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,14 rue de la Corderie,PARIS,75003,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,122 avenue de la République,PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"209, rue du Fg ST DENIS",PARIS,75010,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"41, rue du Cherche Midi",PARIS,75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"4, rue Hérold",PARIS,75001,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"60, avenue Daumesnil",PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"100, avenue Ledru Rollin",PARIS,75011,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"104, rue d'Avron",PARIS,75020,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"43, rue des Batignolles",PARIS,75017,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"104, rue de Courcelles",PARIS,75017,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"126, avenue Simon Bolivar",PARIS,75019,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"103, rue Caulaincourt",PARIS,75018,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"76, boulevard st germain",PARIS,75005,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"86, rue d'Alésia",PARIS,75014,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"33, rue Sedaine",PARIS,75011,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"16, rue Raspail",BOIS COLOMBES,92270,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"43, avenue de la République",LES MUREAUX,78130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"87, grande rue",LONGJUMEAU,91160,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, rue Collignon",ST GERMAIN EN LAYE,78100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"2, rue de Breuvery",ST GERMAIN EN LAYE,78100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"5, place des Copains d'abord",EVRY COURCOURONNES,91080,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"73, rue du Président Wilson",LEVALLOIS PERRET,92300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"148, avenue de Paris",VINCENNES,94300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"9 ter, rue Pierre Semart",SAINT CYR L,78210,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"2, rue Henri Janin",VILLENEUVE ST GEORGES,94190,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"84, avenue Jean Jaurès",CLAMART,92140,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"4, rue Saint Pierre",ST GERMAIN EN LAYE,78100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"55, rue Aristide Briand",MEAUX,77100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"3, allée des Ambalais",LE PLESSIS TREVISE,94420,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"18, rue Kléber",ISSY LES MOULINEAUX,92130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"117, rue Désiré Clément",CONFLANS STE HONORINE,78700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"27, rue de la Commune de PARIS",AUBERVILLIERS,93300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"7, rue Mertens",BOIS COLOMBES,92270,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"3, rue Jules Verne",PUTEAUX,92800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"86, grande rue C. de Gaulle",NOGENT SUR MARNE,94130,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"69, rue au Pain",ST GERMAIN EN LAYE,78100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"3, rue de Verdun",COLOMBES,92700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, place Boileau",BAGNEUX,92220,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"30, rue de Normandie",ASNIERES,92600,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"4, rue de la Reine Henriette",COLOMBES,92700,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"14, cours des Roches",NOISIEL,77420,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"3, rue Edouard Belin",RUEIL,92500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"26, boulevard du Havre",HERBLAY,95220,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"4, avenue du Marèchal Foch",CHATOU,78400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"39, rue Camilles Desmoulins",CACHAN,94230,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"177, avenue Thiers",LYON,69006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"166, rue de Rome",MARSEILLE,13006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"11, rue Antoine Lumière",LYON,69008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"188, avenue F.Roosevelt",BRON,69500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"112, avenue F.Roosevelt",BRON,69500,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"10, rue Albert Calmette",CASTRES,81100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"11, bis Rue Paul Langevin",CHENOVE DIJON,21300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, rue Blacas",NICE,06000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"395, rue Georges Méliès",ST GERVAIS LA FORET,41350,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"13, rue de la Fosse",NANTES,44000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"75, grande rue",SENS,89100,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"2, avenue Bale",SAINT LOUIS,68300,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"50, rue Saint-Ferréol",MARSEILLE,13001,France,Commerces,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,7 rue du Parc,OBERHAUSBERGEN,67205,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,140 Avenue Harrison,SAINGHIN EN MELANTOIS,59262,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,10 rue Marc Petit,LYON,69002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,350 Avenue du Club hippique,AIX EN PROVENCE,13090,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,6 rue Claude-Marie Perroud,TOULOUSE,31100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,59 allée Jean Jaurès,TOULOUSE,31000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,4 rue Léon Gozlan,MARSEILLE,13000,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"14, Allée Pierre Gilles de Gennes",MERIGNAC,33700,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,9 avenue Charles De Gaulle,SAINT-DIDIER-AU-MONT-D,69370,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,950 avenue de Roumanille,BIOT,06410,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,10 place Bougainville,MARSEILLE,13015,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,118 rue de la Boètie,PARIS,75008,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"64, rue de Crimée",PARIS,75019,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,10 avenue de la Grande Armée,PARIS,75017,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"71, avenue Jean Jaurès",BOULOGNE,92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"60, rue Etienne Dolet",MALAKOFF,92240,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"44, rue Jean Jaurès",CLAMART,92140,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"33 ter, boulevard Gambetta",POISSY,78300,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"2, place Georges Pompidou",POISSY,78300,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, avenue de l'Europe",TOUSSUS LE NOBLE,78117,France,Bureaux,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"1, rue Condorcet",ST MICHEL SUR ORGE,91240,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"7, allée de Giverny",CROISSY SUR SEINE,78290,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"3, rue Charles de Gaulle",FRENEUSE,78840,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"15, rue Aimé Cotton",ST PRIEST,69800,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"196, allée Alexandre Borodine",ST PRIEST,69791,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,"41, rue du Capitaine Guynemer","COURBEVOIE
+R",92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,96 Avenue de Paris –,"VERSAILLES 
+D",78000,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BUROBOUTIC METROPOLE,,7 rue du Regard –,"PARIS 
+D",75006,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTA CONVICTIONS,,87 rue de Richelieu,"PARIS
+D",75002,France,,,100.0,1400000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTA CONVICTIONS,,87 rue de Richelieu -,PARIS,75002,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTA CONVICTIONS,,9 rue des Petites Écuries,PARIS,75010,France,Commerce,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALTA CONVICTIONS,,45 rue Bernard Million,SAINT-JEAN-DE-LA-RUELLE,45140,France,Activité,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACTIVIMMO,,"4, avenue Georges Mandel,","PARIS
+RCS PARIS",75116,France,,,100.0,1072695329.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALLIANZ HOME,,28 rue Sainte-Marie,COURBEVOIE,92400,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALLIANZ HOME,,73 avenue Thiers,BORDEAUX,33100,France,Activités,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ALLIANZ HOME,,1 Cours Michelet,"PUTEAUX
+O",92800,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"50, cours de l’île Seguin","BOULOGNE-BILLANCOURT 
+T",92100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"2, avenue Gambetta","PARIS LA DÉFENSE CEDEX 
+D",92066,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"16, boulevard des Italiens","PARIS
+E",75009,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"131, avenue de Wagram","PARIS
+L",75017,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"95, rue Pereire –",SAINT-GERMAIN-EN-LAYE,78100,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"66, avenue Kléber (parties communes) –",PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,4 rue Vélasquez –,"PARIS
+-",75008,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"2, rue Louis-David –",PARIS,75016,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"31, rue des Colonnes du Trône –",PARIS,75012,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"58, avenue Roger Salengro –","FONTENAY-SOUS-BOIS
+-",94120,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"105, rue Jules Guesde –","LEVALLOIS-PERRET
+-",92300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ACCES VALEUR PIERRE,,"68, rue Marjolin –","LEVALLOIS-PERRET
+-",92300,France,,,100.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0

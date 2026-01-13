@@ -1,0 +1,76 @@
+﻿scpi_source,categorie,test_id,description,valeur_testee,statut,commentaire,severite
+lf croissance et territoires rapport annuel 2024,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),6.25%,OK,,Info
+lf croissance et territoires rapport annuel 2024,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),89.10%,OK,,Info
+lf croissance et territoires rapport annuel 2024,REPARTITION,REP-001,Somme géographique ≈ 100%,69.9%,ALERTE,,Info
+ELYSEES PIERRE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),87.75%,OK,,Info
+ELYSEES PIERRE,REPARTITION,REP-001,Somme géographique ≈ 100%,75.2%,ALERTE,,Info
+CRISTAL LIFE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.37%,OK,,Info
+CAPIFORCE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),6.83%,OK,,Info
+CAPIFORCE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),97.38%,OK,,Info
+CAPIFORCE,ENDETTEMENT,END-001,LTV < 40%,8.16%,OK,,Info
+CAPIFORCE,REPARTITION,REP-001,Somme géographique ≈ 100%,185.0%,ALERTE,,Info
+aestiam placement pierre rapport annuel 2024,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.40%,OK,,Info
+aestiam placement pierre rapport annuel 2024,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),90.40%,OK,,Info
+aestiam placement pierre rapport annuel 2024,REPARTITION,REP-001,Somme géographique ≈ 100%,22.4%,ALERTE,,Info
+FICOMMERCE PROXIMITE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.07%,OK,,Info
+FICOMMERCE PROXIMITE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),96.22%,OK,,Info
+FICOMMERCE PROXIMITE,REPARTITION,REP-001,Somme géographique ≈ 100%,79.6%,ALERTE,,Info
+EDMOND DE ROTHSCHILD EUROPA,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),8.00%,OK,,Info
+EDMOND DE ROTHSCHILD EUROPA,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),100.00%,OK,,Info
+ATOUT PIERRE DIVERSIFICATION,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),4.72%,OK,,Info
+ATOUT PIERRE DIVERSIFICATION,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),87.74%,OK,,Info
+ATOUT PIERRE DIVERSIFICATION,ENDETTEMENT,END-001,LTV < 40%,20.00%,OK,,Info
+ATOUT PIERRE DIVERSIFICATION,REPARTITION,REP-001,Somme géographique ≈ 100%,33.5%,ALERTE,,Info
+rivoli avenir patrimoine rapport annuel 2024,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),3.89%,OK,,Info
+rivoli avenir patrimoine rapport annuel 2024,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),88.85%,OK,,Info
+rivoli avenir patrimoine rapport annuel 2024,ENDETTEMENT,END-001,LTV < 40%,40.00%,OK,,Info
+rivoli avenir patrimoine rapport annuel 2024,REPARTITION,REP-001,Somme géographique ≈ 100%,20.3%,ALERTE,,Info
+COMETE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),10.62%,OK,,Info
+COMETE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),90.70%,OK,,Info
+ALTIXIA COMMERCES,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.12%,OK,,Info
+ALTIXIA COMMERCES,ENDETTEMENT,END-001,LTV < 40%,5.10%,OK,,Info
+ALTIXIA COMMERCES,REPARTITION,REP-001,Somme géographique ≈ 100%,71.0%,ALERTE,,Info
+EUROVALYS,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),90.24%,OK,,Info
+ALTIXIA CADENCE XII,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.73%,OK,,Info
+ALTIXIA CADENCE XII,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),90.00%,OK,,Info
+ALTIXIA CADENCE XII,ENDETTEMENT,END-001,LTV < 40%,11.24%,OK,,Info
+ALTIXIA CADENCE XII,REPARTITION,REP-001,Somme géographique ≈ 100%,62.0%,ALERTE,,Info
+"Eden
+SCPI 
+Eden
+Rapport annuel",OCCUPATION,OCC-001,TOF dans plage normale (80-100%),100.00%,OK,,Info
+"Eden
+SCPI 
+Eden
+Rapport annuel",ENDETTEMENT,END-001,LTV < 40%,40.00%,OK,,Info
+pierre selection rapport annuel 2024,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.52%,OK,,Info
+pierre selection rapport annuel 2024,ENDETTEMENT,END-001,LTV < 40%,12.20%,OK,,Info
+pierre selection rapport annuel 2024,REPARTITION,REP-001,Somme géographique ≈ 100%,69.0%,ALERTE,,Info
+EFIMMO 1,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.07%,OK,,Info
+EFIMMO 1,REPARTITION,REP-001,Somme géographique ≈ 100%,138.4%,ALERTE,,Info
+RIVOLI AVENIR PATRIMOINE AN 2,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),3.89%,OK,,Info
+RIVOLI AVENIR PATRIMOINE AN 2,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),88.85%,OK,,Info
+RIVOLI AVENIR PATRIMOINE AN 2,ENDETTEMENT,END-001,LTV < 40%,40.00%,OK,,Info
+RIVOLI AVENIR PATRIMOINE AN 2,REPARTITION,REP-001,Somme géographique ≈ 100%,20.3%,ALERTE,,Info
+ALLIANZ PIERRE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),4.01%,OK,,Info
+ALLIANZ PIERRE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),88.80%,OK,,Info
+ALLIANZ PIERRE,REPARTITION,REP-001,Somme géographique ≈ 100%,67.0%,ALERTE,,Info
+CRISTAL RENTE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),4.84%,OK,,Info
+CRISTAL RENTE,REPARTITION,REP-001,Somme géographique ≈ 100%,90.5%,ALERTE,,Info
+ELIALYS,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.71%,OK,,Info
+ELIALYS,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),97.27%,OK,,Info
+ACCIMMO PIERRE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),3.88%,OK,,Info
+ACCIMMO PIERRE,REPARTITION,REP-001,Somme géographique ≈ 100%,75.2%,ALERTE,,Info
+BUROBOUTIC METROPOLE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.07%,OK,,Info
+BUROBOUTIC METROPOLE,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),96.38%,OK,,Info
+BUROBOUTIC METROPOLE,REPARTITION,REP-001,Somme géographique ≈ 100%,85.1%,ALERTE,,Info
+ALTA CONVICTIONS,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),6.50%,OK,,Info
+ACTIVIMMO,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),5.50%,OK,,Info
+ACTIVIMMO,ENDETTEMENT,END-001,LTV < 40%,30.00%,OK,,Info
+ACTIVIMMO,REPARTITION,REP-001,Somme géographique ≈ 100%,39.0%,ALERTE,,Info
+ALLIANZ HOME,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),3.69%,OK,,Info
+ALLIANZ HOME,OCCUPATION,OCC-001,TOF dans plage normale (80-100%),100.00%,OK,,Info
+ALLIANZ HOME,REPARTITION,REP-001,Somme géographique ≈ 100%,74.2%,ALERTE,,Info
+ACCES VALEUR PIERRE,PERFORMANCE,PERF-001,TD dans plage normale (2-12%),3.53%,OK,,Info
+ACCES VALEUR PIERRE,ENDETTEMENT,END-001,LTV < 40%,16.00%,OK,,Info
+ACCES VALEUR PIERRE,REPARTITION,REP-001,Somme géographique ≈ 100%,102.9%,OK,,Info
