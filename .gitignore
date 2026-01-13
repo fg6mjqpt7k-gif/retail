@@ -12,7 +12,4 @@ build/
 .env
 .venv/
 venv/
-# Generated files
-*.xlsx
-*.csv
-output/
+# Generated files are now tracked in output/
